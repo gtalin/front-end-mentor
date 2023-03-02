@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | Results summary component using Tailwind</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="font-normal min-h-screen mx-auto md:bg-white">
+  <section class="max-w-[680px] mx-auto flex justify-center items-center md:bg-white  md:my-auto md:min-h-[90vh]">
+    <div class="bg-white md:flex md:my-4 md:shadow-lg md:rounded-b-3xl md:rounded-tr-3xl md:w-full md:justify-start">
+
+  <div class="bg-gradient-to-b from-linear-grad-1 to-linear-grad-2 py-4 px-10 rounded-b-3xl text-pale-blue text-center max-w-[340px] md:rounded-3xl md:w-[270px]">
+  <h2 class="m-4 text-pale-blue">Your Result</h2>
+  <div class="p-4 rounded-full bg-gradient-to-b from-circle-grad-1 to-circle-grad-2 w-32 h-32 mx-auto flex flex-col items-center justify-end gap-3 font-bold m-4">
+    <span class="font-bold text-5xl">76</span>
+    <span class="text-xs text-light-lavender/50">of 100</span>
+  </div>
+  <p class="text-xl m-4 font-bold">Great</p>
+  <p class="text-light-lavender font-normal text-sm mb-4 max-w-[257px] mx-auto">You scored higher than 65% of the people who have taken these tests.</p>
+</div>
+  
+  <div class="p-6 space-y-4 max-w-[340px] md:max-w-[410px] md:w-[410px]">
+    <h3 class="text-dark-gray-blue">Summary</h3>
+  <p class="bg-light-red/10 rounded-md py-3 px-4 text-light-red text-sm flex justify-between items-center">
+    <span>
+    <img src="./img/icon-reaction.svg" alt="" class="text-light-red w-4 inline-block">
+    Reaction </span>
+    <span> <span class="text-dark-gray-blue">80</span>
+       <span class="text-dark-gray-blue/50">/ 100</span></span>
+  </p>
+
+  <p class="bg-orange-yellow/10 rounded-md py-3 px-4 text-orange-yellow text-sm flex justify-between items-center">
+    <span>
+    <img src="./img/icon-memory.svg" alt="" class="text-orange-yellow w-4 inline-block">
+    Memory </span>
+    <span> <span class="text-dark-gray-blue">92</span>
+       <span class="text-dark-gray-blue/50">/ 100</span></span>
+  </p>
+
+  <p class="bg-green-teal/10 rounded-md py-3 px-4 text-green-teal text-sm flex justify-between items-center">
+    <span>
+    <img src="./img/icon-verbal.svg" alt="" class="text-green-teal w-4 inline-block">
+    Verbal </span>
+    <span> <span class="text-dark-gray-blue">80</span>
+       <span class="text-dark-gray-blue/50">/ 100</span></span>
+  </p>
+
+  <p class="bg-cobalt-blue/10 rounded-md py-3 px-4 text-cobalt-blue text-sm flex justify-between items-center">
+    <span>
+    <img src="./img/icon-visual.svg" alt="" class="text-cobalt-blue w-4 inline-block">
+    Visual </span>
+    <span> <span class="text-dark-gray-blue">80</span>
+       <span class="text-dark-gray-blue/50">/ 100</span></span>
+  </p>
+
+  <button class="bg-dark-gray-blue text-white text-sm font-normal rounded-3xl w-full p-3 ease-out py-4 px-10 rounded-b-3xl hover:delay-200 hover:duration-[3000ms] hover:ease-in hover:bg-gradient-to-b hover:from-linear-grad-1 hover:to-linear-grad-2 ">Continue</button>
+  
+  </div>
+
+</div>
+</section>
+
+  <footer class="attribution sticky top-[90vh]">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">AJ</a>.
+  </footer>
+</body>
+</html>
