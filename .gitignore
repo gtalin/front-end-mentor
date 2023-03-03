@@ -1,3 +1,11 @@
+node_modules
+help.md
+
+results-summary-component/results-summary-component-main/
 results-summary-component/node_modules/
 results-summary-component/help.md
-results-summary-component/results-summary-component-main/
+
+
+products-preview-card-component/product-preview-card-component-main
+products-preview-card-component/node_modules
+products-preview-card-component/help.md
