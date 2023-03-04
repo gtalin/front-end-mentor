@@ -56,7 +56,9 @@ The screenshot for the desktop view:
 
 ### What I learned
 
-How to add different shades of a custom tailwind color. Also how to add transitions on background color change. It can be done using the property `transition-colors`. The `transition` property
+How to add different shades of a custom tailwind color. Also how to add transitions on background color change. It can be done using the property `transition-colors`. The `transition` property.
+
+Displaying different images for different screen sizes. 
 
 ### Continued development
 
