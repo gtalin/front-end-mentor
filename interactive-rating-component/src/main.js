@@ -1,17 +1,25 @@
 const handleFormSubmission = (e) => {
   e.preventDefault();
-  console.log("form was submitted");
-  console.log("e", e);
-  console.log("e.target.value", e.target.value);
+  
   let rating;
   try {
     rating = document.querySelector('input[name="rating"]:checked').value;
-    console.log("the selected rating is", rating);
+    
     // display the ratings card
     ratingPlaceHolder = document.getElementById("rating-placeholder");
     ratingPlaceHolder.innerHTML = rating;
+    // ratingCard.classList.add('translate-x-full');
+    ratingCard.classList.add('opacity-0');
     ratingCard.classList.add("hidden");
+    // setTimeout(() => {
+    //   ratingCard.classList.add("hidden");
+    // }, 0)
     thankyouCard.classList.remove("hidden");
+    setTimeout(()=>{
+      console.log("add some animation")
+      thankyouCard.classList.remove("opacity-0");
+      thankyouCard.classList.remove("translate-x-1/2");
+    }, 100)
 
   } catch (error) {
     console.log("Please select a rating")

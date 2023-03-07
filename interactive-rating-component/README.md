@@ -68,7 +68,7 @@ There was a lot to learn in this project. It had several seemingly small element
 
 - Another tailwind related challenge was using the `:not` selector in tailwind css. We used the `:focus` and `:hover` pseudo class to change the color of the radio input (to the primary color that was specified). However we want that color to be applied only when the radio input is not checked. In CSS it is quite simple. We chain selectors like so: `.radio-input:not(:checked):focus` and `.radio-input:not(:checked):hover`. However I had to do a fair amount of searching to find out how we can do something like that in tailwind css. In tailwind css it is [done](https://www.kindacode.com/snippet/using-not-selector-in-tailwind-css/) `[&:not(input:checked)]:focus:bg-primary`. Even after finding the above resource for using `:not`, I was using is wrong. We need to use a selector with `:not` like `p` or `input` I was using a pseudo class `:checked` and its variant `checked` rather than `input:checked`. When I could not get it to work and was writing custom css for it did I realise my mistake. But I had to spent a fair amount of time on this. Just using custom CSS would've been a lot faster. But in the end I did learn something new.
 
-- Implementing interactivity with JS.
+- Implementing interactivity with JS. Added animation effect for cards using `translate-x` property so that the thank you card appears to slide in. Experimented a bit with this. Initially used a slide out animation for ratings card and a slide in animation for the thank you card. But it was looking a little distracting. A better effect was to just hide the ratings card and let the thank you card slide in.
 
 ### Continued development
 
