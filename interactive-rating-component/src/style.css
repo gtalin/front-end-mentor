@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Overpass', sans-serif;
+    ;
+  }
+  .debug {
+    border: 2px solid goldenrod;
+  }
+
+  /* input[type="radio"]:checked::before {
+    transform: scale(1);
+  } */
+  
+}
+
+
+
+/* @layer components {
+  .custom-radio-button {
+    @apply inline-block mb-3 w-10 h-10 mr-2 rounded-full bg-neutral-dark-blue-light text-neutral-light-gray
+    cursor-pointer relative checked:bg-neutral-medium-gray checked:text-white 
+    transition-colors hover:bg-primary hover:text-white focus:bg-primary focus:text-white before:w-10 before:h-10 before:content-['1'] before:absolute before:bg-neutral-light-gray before:text-white before:top-0 before:left-[50%] before:transition-transform before:transform
+    before:rounded-full 
+    before:scale-0 peer-checked:before:scale-100 
+    
+    
+    after:w-10 after:h-10 after:content-['1'] after:absolute after:bg-neutral-light-gray after:text-white after:top-0 after:left-[50%] after:transition-transform after:transform
+    after:rounded-full 
+    after:scale-0 peer-checked:after:scale-100
+    
+  }
+} */
+
+
+/* @layer components {
+  .custom-radio-button {
+    @apply relative 
+    before:w-10 before:h-10 before:content-['1'] before:absolute before:bg-neutral-light-gray before:text-white before:top-0 before:left-[50%] before:transition-transform before:transform
+    before:rounded-full 
+    before:scale-0 peer-checked:before:scale-100 
+    
+    
+    after:w-10 after:h-10 after:content-['2'] after:absolute after:bg-neutral-light-gray after:text-white after:top-0 after:left-[50%] after:transition-transform after:transform
+    after:rounded-full 
+    after:scale-0 peer-checked:after:scale-100
+    
+  }
+} */
+
+@layer components {
+  .radio-input {
+    @apply appearance-none w-10 h-10 mb-0 rounded-full bg-neutral-dark-blue-light text-neutral-light-gray cursor-pointer relative transition-colors leading-none
+  }
+
+  /* .radio-input:checked {
+    @apply bg-neutral-light-gray text-white
+  }
+
+  .radio-input:not(:checked):hover {
+    @apply bg-primary text-white
+  }
+
+  .radio-input:not(:checked):focus {
+    @apply bg-primary text-white
+  }
+   */
+}

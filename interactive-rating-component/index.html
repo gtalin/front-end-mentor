@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./build/img/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./build/css/style.css">
+  
+</head>
+<body class="bg-black">
+  <main class="">
+    <section class="h-[90vh] flex items-center">
+      <div class="bg-gradient-to-br from-neutral-dark-blue to-neutral-verydark-blue py-8 px-4 max-w-[350px] md:text-sm mx-4 mobile:mx-auto my-auto rounded-lg space-y-4 relative">
+        <span class="w-10 h-10 rounded-full bg-neutral-dark-blue-light flex justify-center items-center relative z-10 p-1">
+          <img src="./build/img/icon-star.svg" alt="" >
+        </span>
+        <h2 class="text-white text-3xl">How did we do?</h2>
+        <p class="text-neutral-light-gray">Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+
+        <!-- Rating state start -->
+        <form class="" id="rating">
+          <div class="flex justify-between mb-4">
+          
+          <div class="relative mr-2 p-0 flex">
+          <input type="radio" name="rating" id="choice1" value="1" class="peer appearance-none w-10 h-10 mb-0 rounded-full bg-neutral-dark-blue-light text-neutral-light-gray
+          cursor-pointer relative [&:not(input:checked)]:hover:bg-primary hover:text-white [&:not(input:checked)]:focus:bg-primary focus:text-white checked:bg-neutral-light-gray checked:text-white transition-colors leading-none"/>
+          <label for="choice1" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-xs cursor-pointer text-neutral-light-gray peer-checked:text-white leading-none">1
+          </label>
+          <!-- <label for="choice1" class="custom-radio-button">1
+          </label> -->
+        </div>
+
+        <div class="relative mr-2 p-0 flex">
+          <input type="radio" name="rating" id="choice2" value="2" class="peer appearance-none w-10 h-10 mb-0 rounded-full bg-neutral-dark-blue-light text-neutral-light-gray
+          cursor-pointer relative [&:not(input:checked)]:hover:bg-primary hover:text-white [&:not(input:checked)]:focus:bg-primary focus:text-white checked:bg-neutral-light-gray checked:text-white transition-colors leading-none" />
+          <label for="choice2" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-xs cursor-pointer text-neutral-light-gray peer-checked:text-white leading-none">
+            2
+          </label>
+        </div>
+        
+        <div class="relative mr-2 p-0 flex">
+          <input type="radio" name="rating" id="choice3" value="3" class="peer appearance-none w-10 h-10 mb-0 rounded-full bg-neutral-dark-blue-light text-neutral-light-gray
+          cursor-pointer relative [&:not(input:checked)]:hover:bg-primary hover:text-white [&:not(input:checked)]:focus:bg-primary focus:text-white checked:bg-neutral-light-gray checked:text-white transition-colors leading-none"/>
+          <label for="choice3" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-xs cursor-pointer text-neutral-light-gray peer-checked:text-white leading-none">
+            3
+          </label>
+        </div>
+
+
+        <div class="relative mr-2 p-0 flex">  
+          <input type="radio" name="rating" id="choice4" value="4" class="peer appearance-none w-10 h-10 mb-0 rounded-full bg-neutral-dark-blue-light text-neutral-light-gray
+          cursor-pointer relative [&:not(input:checked)]:hover:bg-primary hover:text-white [&:not(input:checked)]:focus:bg-primary focus:text-white checked:bg-neutral-light-gray checked:text-white transition-colors leading-none"/>
+          <label for="choice4" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-xs cursor-pointer text-neutral-light-gray peer-checked:text-white leading-none">
+            4
+          </label>
+        </div>
+          
+      <div class="relative mr-2 p-0 flex">
+          <input type="radio" name="rating" id="choice5" value="5" class="peer appearance-none w-10 h-10 mb-0 rounded-full bg-neutral-dark-blue-light text-neutral-light-gray
+          cursor-pointer relative [&:not(input:checked)]:hover:bg-primary hover:text-white [&:not(input:checked)]:focus:bg-primary focus:text-white checked:bg-neutral-light-gray checked:text-white transition-colors leading-none"/>
+          <label for="choice5" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-xs cursor-pointer text-neutral-light-gray peer-checked:text-white leading-none">
+            5
+          </label>
+        </div>
+
+      </div>
+          <button class="w-full bg-primary rounded-3xl uppercase -tracking-wider text-white p-3 text-sm hover:bg-white hover:text-primary">
+            submit
+          </button>
+        </form>
+        <!-- Rating state end -->
+      </div>
+    </section>
+  </main>
+  
+
+  
+  
+
+  <!-- Thank you state start -->
+
+  You selected <!-- Add rating here --> out of 5
+
+  Thank you!
+
+  We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!
+
+  <!-- Thank you state end -->
+
+  
+  <footer class="text-center text-[11px] text-neutral-light-gray">
+    Challenge by <a class="text-attribution" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a class="text-attribution" href="https://www.frontendmentor.io/profile/gtalin">AJ</a>.
+  </footer>
+</body>
+</html>
