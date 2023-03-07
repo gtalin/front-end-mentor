@@ -19,7 +19,7 @@
 <body class="bg-black">
   <main class="">
     <section class="h-[90vh] flex items-center">
-      <div class="bg-gradient-to-br from-neutral-dark-blue to-neutral-verydark-blue py-8 px-6 max-w-[350px] md:text-sm mx-4 mobile:mx-auto my-auto rounded-lg relative">
+      <div class="rating-card bg-gradient-to-br from-neutral-dark-blue to-neutral-verydark-blue py-8 px-6 max-w-[350px] md:text-sm mx-4 mobile:mx-auto my-auto rounded-lg relative">
         <span class="w-10 h-10 rounded-full bg-neutral-dark-blue-light flex justify-center items-center relative z-10 p-1 my-4">
           <img src="./build/img/icon-star.svg" alt="" >
         </span>
@@ -28,7 +28,7 @@
         to help us improve our offering!</p>
 
         <!-- Rating state start -->
-        <form class="pt-4" id="rating">
+        <form class="pt-4" id="ratings-form">
           <div class="flex justify-between mb-6">
           
           <div class="relative mr-2 p-0 flex">
@@ -74,34 +74,27 @@
         </div>
 
       </div>
-          <button class="w-full bg-primary rounded-3xl uppercase -tracking-wider text-white p-3 text-sm hover:bg-white hover:text-primary">
+          <button type="submit" class="w-full bg-primary rounded-3xl uppercase -tracking-wider text-white p-3 text-sm hover:bg-white hover:text-primary">
             submit
           </button>
         </form>
         <!-- Rating state end -->
       </div>
+
+      <div class="hidden thankyou-card bg-gradient-to-br from-neutral-dark-blue to-neutral-verydark-blue py-8 px-6 max-w-[350px] md:text-sm mx-4 mobile:mx-auto my-auto rounded-lg relative text-center md:max-w-[320px]">
+        <img src="./build/img/illustration-thank-you.svg" alt="" class="m-auto my-4">
+        <p class="toast rounded-xl bg-neutral-dark-blue-light text-primary text-sm py-1.5 px-3 w-[60%] mx-auto my-6 opacity-90 md:text-xs">You selected <span id="rating-placeholder"></span> out of 5</p>
+        <p class="text-2xl text-white my-4">Thank you!</p>
+        <p class="text-neutral-light-gray text-sm md:text-xs">We appreciate you taking the time to give a rating. If you ever need more support, 
+          don’t hesitate to get in touch!</p>
+      </div>
     </section>
   </main>
-  
-
-  
-  
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
   
   <footer class="text-center text-[11px] text-neutral-light-gray">
     Challenge by <a class="text-attribution" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a class="text-attribution" href="https://www.frontendmentor.io/profile/gtalin">AJ</a>.
   </footer>
 </body>
+<script src="./src/main.js"></script>
 </html>

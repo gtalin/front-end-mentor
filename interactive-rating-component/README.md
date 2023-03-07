@@ -39,6 +39,9 @@ The screenshot for the desktop view (with some elements in active state):
 
 ![](./screenshot_desktop.png)
 
+Screenshot for the thank you state:
+![](./screenshot-mobile-thankyoucard.png)
+
 ### Links
 
 - Solution URL: [Products preview card](https://github.com/gtalin/front-end-mentor/interactive-rating-component)
