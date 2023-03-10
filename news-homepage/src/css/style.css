@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Inter, system-ui, sans-serif;
+    font-size: 15px;
+    /* max-width: 1441px;
+    margin: 0 auto; */
+  }
+
+  p {
+    color: hsl(233, 8%, 79%);
+    color: hsl(236, 13%, 42%);
+  }
+
+  .debug {
+    border: 2px solid goldenrod;
+    font-size: 15px;
+  }
+}
