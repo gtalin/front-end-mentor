@@ -608,7 +608,7 @@ html {
 }
 
 .bg-mobile-divider {
-  background-image: url('/src/img/pattern-divider-mobile.svg');
+  background-image: url('./build/img/pattern-divider-mobile.svg');
 }
 
 .from-n-gray-blue {
@@ -719,13 +719,8 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.after\:content-\[url\(\'\/build\/img\/icon-dice\.svg\'\)\]::after {
-  --tw-content: url('/build/img/icon-dice.svg');
-  content: var(--tw-content);
-}
-
 .after\:content-link::after {
-  --tw-content: url('/src/img/icon-dice.svg');
+  --tw-content: url("./build/img/icon-dice.svg");
   content: var(--tw-content);
 }
 
@@ -746,6 +741,6 @@ html {
   }
 
   .md\:bg-desktop-divider {
-    background-image: url('/src/img/pattern-divider-desktop.svg');
+    background-image: url('./build/img/pattern-divider-desktop.svg');
   }
 }
