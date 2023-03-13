@@ -19,11 +19,11 @@ module.exports = {
         'n-dark-blue': 'hsl(218, 23%, 16%)'
       },
       backgroundImage: {
-        'mobile-divider': "url('/build/img/pattern-divider-mobile.svg')",
-        'desktop-divider': "url('/build/img/pattern-divider-desktop.svg')",
+        'mobile-divider': "url('./build/img/pattern-divider-mobile.svg')",
+        'desktop-divider': "url('./build/img/pattern-divider-desktop.svg')",
       },
       content: {
-        'link': 'url("/build/img/icon-dice.svg")',
+        'link': 'url("./build/img/icon-dice.svg")',
       },
       screens: {
         mobile: '375px',

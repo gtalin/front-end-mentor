@@ -423,14 +423,6 @@ html {
   font-family: 'Manrope', sans-serif;
 }
 
-.debug {
-  border: 2px solid goldenrod;
-}
-
-.quote {
-  font-size: 28px;
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -533,32 +525,12 @@ html {
   position: relative;
 }
 
-.bottom-0 {
-  bottom: 0px;
-}
-
-.left-1\/2 {
-  left: 50%;
-}
-
-.bottom-\[24px\] {
-  bottom: 24px;
-}
-
-.bottom-12 {
-  bottom: 3rem;
-}
-
-.-bottom-12 {
-  bottom: -3rem;
-}
-
 .-bottom-6 {
   bottom: -1.5rem;
 }
 
-.m-auto {
-  margin: auto;
+.left-1\/2 {
+  left: 50%;
 }
 
 .mx-2 {
@@ -579,6 +551,10 @@ html {
   display: flex;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -587,48 +563,8 @@ html {
   height: 90vh;
 }
 
-.h-10 {
-  height: 2.5rem;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
-.h-12 {
-  height: 3rem;
-}
-
-.h-\[24px\] {
-  height: 24px;
-}
-
-.h-\[50px\] {
-  height: 50px;
-}
-
-.h-\[48px\] {
-  height: 48px;
-}
-
-.w-10 {
-  width: 2.5rem;
-}
-
-.w-20 {
-  width: 5rem;
-}
-
 .w-12 {
   width: 3rem;
-}
-
-.w-\[24px\] {
-  width: 24px;
-}
-
-.w-\[48px\] {
-  width: 48px;
 }
 
 .min-w-\[32ch\] {
@@ -644,21 +580,16 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.-translate-y-1\/2 {
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .bg-n-dark-blue {
@@ -677,7 +608,7 @@ html {
 }
 
 .bg-mobile-divider {
-  background-image: url('/build/img/pattern-divider-mobile.svg');
+  background-image: url('./build/img/pattern-divider-mobile.svg');
 }
 
 .from-n-gray-blue {
@@ -696,10 +627,6 @@ html {
 
 .bg-no-repeat {
   background-repeat: no-repeat;
-}
-
-.p-4 {
-  padding: 1rem;
 }
 
 .px-8 {
@@ -760,34 +687,9 @@ html {
   transition-duration: 150ms;
 }
 
-.after\:debug::after {
-  content: var(--tw-content);
-  border: 2px solid goldenrod;
-}
-
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
-}
-
-.after\:bottom-0::after {
-  content: var(--tw-content);
-  bottom: 0px;
-}
-
-.after\:left-0::after {
-  content: var(--tw-content);
-  left: 0px;
-}
-
-.after\:right-0::after {
-  content: var(--tw-content);
-  right: 0px;
-}
-
-.after\:top-0::after {
-  content: var(--tw-content);
-  top: 0px;
 }
 
 .after\:left-\[50\%\]::after {
@@ -805,34 +707,6 @@ html {
   margin: 0px;
 }
 
-.after\:h-10::after {
-  content: var(--tw-content);
-  height: 2.5rem;
-}
-
-.after\:w-10::after {
-  content: var(--tw-content);
-  width: 2.5rem;
-}
-
-.after\:-translate-x-1\/2::after {
-  content: var(--tw-content);
-  --tw-translate-x: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.after\:-translate-y-1\/2::after {
-  content: var(--tw-content);
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.after\:translate-x-\[12px\]::after {
-  content: var(--tw-content);
-  --tw-translate-x: 12px;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .after\:-translate-x-\[12px\]::after {
   content: var(--tw-content);
   --tw-translate-x: -12px;
@@ -845,14 +719,8 @@ html {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.after\:bg-primary-neon-green::after {
-  content: var(--tw-content);
-  --tw-bg-opacity: 1;
-  background-color: hsl(150 100% 66% / var(--tw-bg-opacity));
-}
-
 .after\:content-link::after {
-  --tw-content: url("/build/img/icon-dice.svg");
+  --tw-content: url("./build/img/icon-dice.svg");
   content: var(--tw-content);
 }
 
@@ -873,6 +741,6 @@ html {
   }
 
   .md\:bg-desktop-divider {
-    background-image: url('/build/img/pattern-divider-desktop.svg');
+    background-image: url('./build/img/pattern-divider-desktop.svg');
   }
 }
