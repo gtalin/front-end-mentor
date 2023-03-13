@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Manrope', sans-serif;
+  }
+
+  .debug {
+    border: 2px solid goldenrod;
+  }
+  .quote {
+    font-size: 28px;
+  }
+}

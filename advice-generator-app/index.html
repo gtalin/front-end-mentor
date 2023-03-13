@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./build/img/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./build/style.css">
+
+  <script src="./src/main.js" async></script>
+  
+</head>
+<body class="bg-n-dark-blue text-primary-light-cyan">
+  <main class="">
+    <section class="h-[90vh] flex">
+      <div class="card bg-n-dark-gray-blue from-n-gray-blue to-n-dark-gray-blue text-white max-w-[32ch] min-w-[32ch] md:max-w-[42ch] md:min-w-[42ch] my-auto mx-2 mobile:mx-auto rounded-xl py-10 px-8 text-center relative">
+        <h2 class="text-primary-neon-green uppercase tracking-[.35em] text-[10px] pb-4">Advice # <span id="advice-number" class="transition">71</span> </h2>
+        <p id="advice" class="text-primary-light-cyan text-2xl mb-8 transition">"It is easy to sit up and take notice, what's difficult is getting up and taking action."</p>
+        <div class="h-5 bg-center bg-no-repeat bg-mobile-divider mb-8 md:bg-desktop-divider"></div>
+        <button class="w-12 h-12 absolute -bottom-6 left-1/2 transform -translate-x-1/2 rounded-full bg-primary-neon-green after:content-link after:m-0 after:absolute after:top-[50%] after:left-[50%] after:-translate-x-[12px] after:-translate-y-[12px]"></button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center text-[10px]">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-primary-neon-green">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/gtalin" class="text-primary-neon-green">AJ</a>.
+  </footer>
+</body>
+</html>
