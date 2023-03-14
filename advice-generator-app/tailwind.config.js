@@ -18,13 +18,13 @@ module.exports = {
         'n-dark-gray-blue': 'hsl(217, 19%, 24%)',
         'n-dark-blue': 'hsl(218, 23%, 16%)'
       },
-      backgroundImage: {
-        'mobile-divider': "url('./build/img/pattern-divider-mobile.svg')",
-        'desktop-divider': "url('./build/img/pattern-divider-desktop.svg')",
-      },
-      content: {
-        'link': 'url("./build/img/icon-dice.svg")',
-      },
+      backgroundImage: theme => ({
+        'mobile-divider': "url('./img/pattern-divider-mobile.svg')",
+        'desktop-divider': "url('./img/pattern-divider-desktop.svg')",
+      }),
+      content: theme => ({
+        'link': 'url("./img/icon-dice.svg")',
+      }),
       screens: {
         mobile: '375px',
         desktop: '1440px',
