@@ -687,6 +687,16 @@ html {
   transition-duration: 150ms;
 }
 
+.transition-shadow {
+  transition-property: box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.delay-500 {
+  transition-delay: 500ms;
+}
+
 .after\:absolute::after {
   content: var(--tw-content);
   position: absolute;
@@ -722,6 +732,11 @@ html {
 .after\:content-link::after {
   --tw-content: url("./img/icon-dice.svg");
   content: var(--tw-content);
+}
+
+.hover\:drop-shadow-neon-1:hover {
+  --tw-drop-shadow: drop-shadow(0 0px 12px hsla(150, 100%, 66%, .90));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 @media (min-width: 375px) {

@@ -133,7 +133,7 @@ We could also have used image as a background image for button.
 3. Add transition to advice text. Used opacity for it.
    Like mentioned in the [SO link](https://stackoverflow.com/questions/29640486/is-there-any-way-to-have-a-transition-effect-when-changing-the-innerhtml)
 
-4. Get background images to work with github pages. [This](https://github.com/tailwindlabs/tailwindcss/discussions/5504) link helped in that regard. Though we're making the entry in the `tailwind.config.js` file, the path for the image should be such that it is with respect to the built css file. Previously I was using a path like `/build/img/icon.svg` which worked with the local server but with github pages it was trying to access the path in `$https://gtalin.github.io/build/img/icon.svg`.
+4. Get background images to work with github pages. [This](https://github.com/tailwindlabs/tailwindcss/discussions/5504) link helped in that regard. Though we're making the entry in the `tailwind.config.js` file, the path for the image should be such that it is with respect to the built css file. Previously I was using a path like `/build/img/icon.svg` which worked with the local server but with github pages it was trying to access the path in `https://gtalin.github.io/build/img/icon.svg`.
 
 ### Continued development
 

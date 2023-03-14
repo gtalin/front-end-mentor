@@ -29,6 +29,13 @@ module.exports = {
         mobile: '375px',
         desktop: '1440px',
       },
+      dropShadow: {
+        'neon-1': '0 0px 12px hsla(150, 100%, 66%, .90)',
+        'neon-2': [
+          '0 35px 35px hsla(150, 100%, 66%, 0.25)',
+            '0 45px 65px hsla(150, 100%, 66%, 0.15)'
+        ]
+      }
     },
   },
   plugins: [],
