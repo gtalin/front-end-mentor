@@ -13,17 +13,19 @@
   <link rel="stylesheet" href="./build/style.css">
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
+  <script src="./src/main.js" async></script>
 </head>
-<body class="bg-neutral-white">
-  <header class="debug py-4 mb-4 medium:mx-2 md:gap-16 lg:mx-4 desktop:max-w-screen-xl desktop:mx-auto">
-    <div class="flex items-center">
+<body class="bg-neutral-white ">
+  <header class="py-4 mx-2 mb-4 medium:mx-2 md:gap-16 lg:mx-4 desktop:max-w-screen-xl desktop:mx-auto">
+    <div class=" relative md:flex md:items-center md:justify-start ">
 
       <a href="/" class="pr-8 " aria-label="snap home" ><img src="./build/img/logo.svg" alt="snap" class=""></a>
-      <nav class="debug flex grow justify-between" role="navigation">
+
+      <nav class=" desktop-nav hidden md:flex md:grow md:justify-between " role="navigation" aria-label="desktop-navigation">
         <ul class="flex">
           <li class="group text-neutral-gray transition mr-4 text-sm relative">
             <button class="peer hover:text-neutral-black">
@@ -60,20 +62,65 @@
         </ul>
       </nav>
 
-      
-</div>
+      <nav class=" mobile-nav" role="navigation" aria-label="mobile-navigation">
+        <button class="menu absolute right-0 top-0 md:hidden" aria-label="menu">
+          <img src="./build/img/icon-menu.svg" alt="" aria-hidden="true">
+        </button>
+        
+        <div class=" hidden fixed top-0 right-0 z-1 bg-white w-[50%] h-[100vh] p-4 overflow-hidden">
+          <button class="menu-close block text-right ml-auto mr-0 mb-7 " aria-label="close menu">
+            <img src="./build/img/icon-close-menu.svg" alt="" aria-hidden="true">
+          </button>
+  
+          <ul class="flex flex-col space-y-5 md:flex-row mb-6">
+            <li class="group text-neutral-gray transition mr-4 text-sm relative">
+              <button class="peer hover:text-neutral-black">
+                Features <span aria-label="expand" class="inline-block w-3 h-1.5 bg-no-repeat bg-center bg-cover bg-arrow-down transition group-hover:bg-arrow-up group-focus-within:bg-arrow-up"></span>
+              </button>
+              <ul class="submenu space-y-3 bg-white p-4 hidden opacity-0 group-hover:block group-hover:opacity-100 group-hover:max-h-max group-focus-within:block group-focus-within:opacity-100 ">
+                <li class=""><a href="/" class="flex items-center text-neutral-gray transition mr-4 text-sm hover:text-neutral-black focus:text-neutral-black"><img class="pr-2" src="./build/img/icon-todo.svg" alt="">Todo List</a></li>
+                <li class=""><a href="/" class="flex items-center text-neutral-gray transition mr-4 text-sm hover:text-neutral-black focus:text-neutral-black"><img class="pr-2" src="./build/img/icon-calendar.svg" alt="">Calendar</a></li>
+                <li class=""><a href="/" class="flex items-center text-neutral-gray transition mr-4 text-sm hover:text-neutral-black focus:text-neutral-black"><img class="pr-2" src="./build/img/icon-reminders.svg" alt="">Reminders</a></li>
+                <li class=""><a href="/" class="flex items-center text-neutral-gray transition mr-4 text-sm hover:text-neutral-black focus:text-neutral-black"><img class="pr-2" src="./build/img/icon-planning.svg" alt="">Planning</a></li>
+              </ul>
+            </li>
+
+            <li class="group text-neutral-gray transition mr-4 text-sm relative">
+              <button class="peer hover:text-neutral-black">
+                Company <span aria-label="expand" class="inline-block w-3 h-1.5 bg-no-repeat bg-center bg-cover bg-arrow-down transition group-hover:bg-arrow-up group-focus-within:bg-arrow-up"></span>
+              </button>
+              <ul class="submenu space-y-3 bg-white p-4 transition hidden opacity-0 group-hover:block group-hover:opacity-100 group-focus-within:block group-focus-within:opacity-100">
+                <li class=""><a href="/" class="flex items-center text-neutral-gray transition mr-4 text-sm hover:text-neutral-black focus:text-neutral-black">History</a></li>
+                <li class=""><a href="/" class="flex items-center text-neutral-gray transition mr-4 text-sm hover:text-neutral-black focus:text-neutral-black">Our Team</a></li>
+                <li class=""><a href="/" class="flex items-center text-neutral-gray transition mr-4 text-sm hover:text-neutral-black focus:text-neutral-black">Blog</a></li>
+                
+              </ul>
+            </li>
+            
+
+            <li><a href="/" class="text-neutral-gray transition mr-4 text-sm hover:text-neutral-black focus:text-neutral-black">Careers</a></li>
+            <li><a href="/" class="text-neutral-gray transition mr-4 text-sm hover:text-neutral-black focus:text-neutral-black">About</a></li>
+          </ul>
+
+          <ul class="flex flex-col space-y-5 md:flex-row text-center">
+            <li><a href="/" class="text-neutral-gray text-sm mr-6 hover:text-neutral-black focus:text-neutral-black">Login</a></li>
+            <li><a href="/" class="text-neutral-gray border-neutral-gray text-sm transition hover:border-neutral-black hover:text-neutral-black focus:text-neutral-black border-2 rounded-xl px-4 py-2 block">Register</a></li>
+          </ul>
+      </div>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="debug mb-12 medium:grid medium:grid-cols-2 medium:mx-2 md:gap-16 desktop:max-w-screen-xl desktop:mx-auto">
-      <div class="debug medium:col-start-2 medium:col-span-1 medium:row-start-1 medium:max-w-[550px] justify-self-start">
+    <section class=" mb-12 medium:grid medium:grid-cols-2 medium:mx-2 md:gap-16 desktop:max-w-screen-xl desktop:mx-auto">
+      <div class=" medium:col-start-2 medium:col-span-1 medium:row-start-1 medium:max-w-[550px] justify-self-start">
       <picture>
         <source media="(max-width: 600px)" srcset="./build/img/image-hero-mobile.png" />
         <source media="(min-width: 601px)" srcset="./build/img/image-hero-desktop.png" />
-        <img src="./build/img/image-hero-desktop.png" alt="" class="debug mb-6 medium:mb-0  medium:h-auto medium:object-cover medium:object-center"/>
+        <img src="./build/img/image-hero-desktop.png" alt="" class=" mb-6 medium:mb-0  medium:h-auto medium:object-cover medium:object-center"/>
       </picture>
     </div>
-      <div class="debug space-y-4 text-center px-2 medium:text-left medium:col-start-1 medium:col-span-1 medium:row-start-1 medium:grid medium:content-end gap-12 md:justify-self-end">
+      <div class=" space-y-4 text-center px-2 medium:text-left medium:col-start-1 medium:col-span-1 medium:row-start-1 medium:grid medium:content-end gap-12 md:justify-self-end">
         <h1 class="text-3xl text-neutral-black medium:mt-4 md:text-6xl lg:text-7xl md:max-w-[11ch]">Make <span class="md:block">remote work</span></h1>
       <p class="text-neutral-gray md:max-w-[46ch]">Get your team in sync, no matter your location. Streamline processes, 
         create team rituals, and watch productivity soar.</p>
@@ -81,7 +128,7 @@
           <a href="/" class="inline-block bg-neutral-black rounded-lg border-2 border-neutral-black px-6 py-2 text-sm text-neutral-white transition hover:bg-transparent focus:bg-transparent hover:text-neutral-black focus:text-neutral-black">Learn more</a>
       </div>
       <div class="client-icons medium:self-end">
-        <ul class="debug flex justify-between">
+        <ul class=" flex justify-between">
           <li><a href="/" aria-label="client data biz"><img src="./build/img/client-databiz.svg" alt="client data biz"></a></li>
           <li><a href="/" aria-label="client audio phile"><img src="./build/img/client-audiophile.svg" alt="client audio phile"></a></li>
           <li><a href="/" aria-label="client meet"><img src="./build/img/client-meet.svg" alt="client meet"></a></li>

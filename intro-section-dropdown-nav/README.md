@@ -103,15 +103,32 @@ We use it for arrow icon: `group-focus-within:bg-arrow-up` and then for `ul` as 
 
 In the header we have to use `flex-grow:1` on the `nav` because the parent `div` has the site logo and `nav` and when we apply `flex` to it, the children (ie. logo and nav) will [only be as wide as their contents](https://stackoverflow.com/questions/50455838/flexbox-not-full-width) and will align left. Which is not what we want. We want the `nav` to occupy full width and the 2 parts of the nav should be left aligned and right aligned respectively.
 
+**Make the header and buttons with images more accessible**
+
+- [accessible buttons](https://www.sarasoueidan.com/blog/accessible-icon-buttons)
+  For hamburger menu and closing of the menu, we use a button with an icon inside of it. Not having a text inside a button will make it in-accessible for screen readers. Several ways we can create an accessible button are covered in the article above. One such way is including text in a span and then hiding it for visual user (so that it will be for screen readers only. We use CSS for hiding the text).
+  And adding `aria-hidden="true"` for the image to hide it from screen readers.
+
+  Yet another technique is to add `hidden` attribute to the text `span` to hide the text for visual users and then use `aria-labelledby` to the button and point it to the text. The image would still be `aria-hidden="true"`
+  The article is a treasure trove of information about how to make a button accessible.
+
+- [accessible mobile nav](https://www.a11ymatters.com/pattern/mobile-nav/)
+  We should not hide `nav`. The menu icon button we use should be inside `nav` and we should hide `ul` raher than the whole `nav`. If we hide the whole `nav` then the `nav` will not be announced by screen readers and hence not accessible.
+  The article also goes on to explain how the menu should be visible for people with JS disabled.
+
+  This article suggests a method to make accessible buttons. It is the same as the first method suggested in [Sara's](https://www.sarasoueidan.com/blog/accessible-icon-buttons/#site-header) article. By giving the button a `span` with text which is hidden visually and then using `background` property to add icon to button.
+
 ### Continued development
 
-Would like to do more projects using tailwindcss.
+Would like to do more projects using tailwindcss. Would also like to focus more on accessibility.
 
 ### Useful resources
 
 - [Tailwind docs](https://tailwindcss.com/docs/)
 - [Group hover](https://stackoverflow.com/questions/65946335/how-to-make-parent-div-activate-styling-of-child-div-for-hover-and-active)
 - [Tabbable dropdown menu](https://css-tricks.com/solved-with-css-dropdown-menus/)
+- [accessible mobile nav](https://www.a11ymatters.com/pattern/mobile-nav/)
+- [accessible buttons](https://www.sarasoueidan.com/blog/accessible-icon-buttons)
 
 ## Author
 
