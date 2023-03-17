@@ -35,14 +35,27 @@
         <li class=""><a href="/" class="flex items-center text-neutral-gray transition mr-4 text-sm hover:text-neutral-black focus:text-neutral-black"><img class="pr-2" src="./build/img/icon-planning.svg" alt="">Planning</a></li>
       </ul>
     </li>
-    <li><a href="/" class="text-neutral-gray transition mr-4 text-sm hover:text-neutral-black focus:text-neutral-black">Company</a></li>
+
+    <li class="group text-neutral-gray transition mr-4 text-sm relative">
+      <button class="peer hover:text-neutral-black">
+        Company <span aria-label="expand" class="inline-block w-3 h-1.5 bg-no-repeat bg-center bg-cover bg-arrow-down transition group-hover:bg-arrow-up group-focus-within:bg-arrow-up"></span>
+      </button>
+      <ul class="submenu absolute top-6 -left-10 space-y-3 bg-white p-4 rounded-xl shadow-2xl  z-1 w-[150px] hidden opacity-0 group-hover:block group-hover:opacity-100 group-focus-within:block group-focus-within:opacity-100">
+        <li class=""><a href="/" class="flex items-center text-neutral-gray transition mr-4 text-sm hover:text-neutral-black focus:text-neutral-black">History</a></li>
+        <li class=""><a href="/" class="flex items-center text-neutral-gray transition mr-4 text-sm hover:text-neutral-black focus:text-neutral-black">Our Team</a></li>
+        <li class=""><a href="/" class="flex items-center text-neutral-gray transition mr-4 text-sm hover:text-neutral-black focus:text-neutral-black">Blog</a></li>
+        
+      </ul>
+    </li>
+    
+
     <li><a href="/" class="text-neutral-gray transition mr-4 text-sm hover:text-neutral-black focus:text-neutral-black">Careers</a></li>
     <li><a href="/" class="text-neutral-gray transition mr-4 text-sm hover:text-neutral-black focus:text-neutral-black">About</a></li>
   </ul>
 </nav>
 
   <ul class="flex">
-    <li><a href="/" class="text-neutral-gray text-sm pr-2 hover:text-neutral-black focus:text-neutral-black">Login</a></li>
+    <li><a href="/" class="text-neutral-gray text-sm mr-6 hover:text-neutral-black focus:text-neutral-black">Login</a></li>
     <li><a href="/" class="text-neutral-gray border-neutral-gray text-sm transition hover:border-neutral-black hover:text-neutral-black focus:text-neutral-black border-2 rounded-xl px-4 py-2">Register</a></li>
   </ul>
 </div>
@@ -77,9 +90,9 @@
     </section>
   </main>
 
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.frontendmentor.io/profile/gtalin">AJ</a>.
+  <footer class="text-[11px] text-center text-neutral-gray mb-2">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-neutral-gray hover:text-neutral-black focus:text-neutral-black">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/gtalin" class="text-neutral-gray hover:text-neutral-black focus:text-neutral-black">AJ</a>.
   </footer>
 </body>
 </html>
