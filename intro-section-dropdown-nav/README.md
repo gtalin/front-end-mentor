@@ -99,6 +99,10 @@ We need to use the `focus-within` selector like so: `li:focus-within > ul`
 
 We use it for arrow icon: `group-focus-within:bg-arrow-up` and then for `ul` as well. Like so `group-focus-within:block group-focus-within:opacity-100`.
 
+**flex-grow**
+
+In the header we have to use `flex-grow:1` on the `nav` because the parent `div` has the site logo and `nav` and when we apply `flex` to it, the children (ie. logo and nav) will [only be as wide as their contents](https://stackoverflow.com/questions/50455838/flexbox-not-full-width) and will align left. Which is not what we want. We want the `nav` to occupy full width and the 2 parts of the nav should be left aligned and right aligned respectively.
+
 ### Continued development
 
 Would like to do more projects using tailwindcss.

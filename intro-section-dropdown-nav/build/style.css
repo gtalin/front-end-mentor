@@ -590,6 +590,10 @@ html {
   width: 150px;
 }
 
+.grow {
+  flex-grow: 1;
+}
+
 .items-center {
   align-items: center;
 }
