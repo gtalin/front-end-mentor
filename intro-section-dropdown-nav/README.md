@@ -92,6 +92,13 @@ The `sub-menu` is now visible even when we `hover` over it and remove `hover` fr
 
 The `submenu` is still not tabbable though. Need to resolve that next.
 
+**Tabbable submenu**
+
+Found [this](https://css-tricks.com/solved-with-css-dropdown-menus/) resource to make tabbable sub-menu.
+We need to use the `focus-within` selector like so: `li:focus-within > ul`
+
+We use it for arrow icon: `group-focus-within:bg-arrow-up` and then for `ul` as well. Like so `group-focus-within:block group-focus-within:opacity-100`.
+
 ### Continued development
 
 Would like to do more projects using tailwindcss.
@@ -100,6 +107,7 @@ Would like to do more projects using tailwindcss.
 
 - [Tailwind docs](https://tailwindcss.com/docs/)
 - [Group hover](https://stackoverflow.com/questions/65946335/how-to-make-parent-div-activate-styling-of-child-div-for-hover-and-active)
+- [Tabbable dropdown menu](https://css-tricks.com/solved-with-css-dropdown-menus/)
 
 ## Author
 
