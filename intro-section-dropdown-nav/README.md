@@ -38,6 +38,10 @@ The screenshot for the mobile view:
 
 ![](./screenshot-mobile.png)
 
+The screenshot for the desktop view with dropdown:
+
+![](./screenshot-desktop-dropdown.png)
+
 ### Links
 
 - Solution URL: [Products preview card](https://github.com/gtalin/front-end-mentor/intro-section-dropdown-nav)
