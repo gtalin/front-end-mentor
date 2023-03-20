@@ -10,7 +10,6 @@ This is a solution to the [Single price grid component challenge on Frontend Men
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -48,9 +47,6 @@ The screenshot for the mobile view:
 - Mobile-first workflow
 - [Tailwind CSS](https://tailwindcss.com/)
 
-### What I learned
-
-**todo**
 
 ### Continued development
 
