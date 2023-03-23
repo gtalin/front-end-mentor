@@ -10,7 +10,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
   <link rel="stylesheet" href="./build/style.css">
 
@@ -18,35 +20,43 @@
   <script src="./src/main.js" async></script>
 </head>
 <body class="">
-  <main>
-    <section>
-      <header><a href="#"><img src="./build/img/logo.svg" alt=""></a></header>
-      <h1>We are launching soon!</h1>
-      <p>Subscribe and get notified</p>
-      <form action="">
-        <input type="email" class="">
-        <div></div>
-        <button>Notify Me</button>
-      </form>
-      <div class="bg-illustration"></div>
+  <main class="text-neutral-gray">
+    <section class="p-8 text-center mx-auto min-h-screen flex flex-col justify-between max-w-screen-md">
+      <header class="mb-6"><a href="#" class="block "><img src="./build/img/logo.svg" alt="ping" class="block m-auto"></a></header>
+      <div class="mb-16">
+        <h1 class="text-2xl mb-2 font-normal">We are launching <span class="font-bold text-neutral-dark-blue">soon!</span></h1>
+        <p class="text-xs mb-4 text-neutral-dark-blue/70">Subscribe and get notified</p>
+        <form action="" class="md:flex md:justify-start md:items-start md:mb-8" novalidate>
+          <div class="grow flex flex-col ">
+            <input type="email" name="email" class="peer border border-neutral-gray/50 px-4 py-2 rounded-3xl text-xs w-[90%] mx-auto mb-4 text-neutral-dark-blue placeholder:text-neutral-gray/30 md:mb-1 " placeholder="Your email address..." required >
+            <div class="feedback hidden opacity-0 transition italic text-secondary-red text-xs mb-4 text-center md:text-left md:w-[85%] md:mx-auto">Some error</div>
+          </div>
+          <button class="bg-primary px-8 py-2 text-xs font-semi-bold text-center tracking-wider text-white rounded-3xl w-[90%] mx-auto mb-6 shadow-md transition hover:bg-primary/80 focus:bg-primary/80 md:w-auto md:mb-0">Notify Me</button>
+        </form>
+        <div class="">
+          <img src="./build/img/illustration-dashboard.png" alt="illustration" class="mb-4">
+        </div>
+      </div>
       <footer>
-        <p>&copy; Copyright Ping. All rights reserved.</p>
+        <ul class="flex space-x-2 justify-center mb-8">
+          <li class=""><a href="#" class="group flex justify-center items-center w-6 h-6 border border-secondary-blue rounded-full transition hover:bg-primary focus:bg-primary hover:border-transparent focus:border-transparent"><i class="text-primary text-xs transition group-hover:text-white group-focus:text-white  fa-brands fa-facebook-f" aria-hidden="true"></i>
+          <span class="fa-sr-only">Ping facebook account</span>
+          </a></li>
+          <li class=""><a href="#" class="group flex justify-center items-center w-6 h-6 border border-secondary-blue rounded-full transition hover:bg-primary focus:bg-primary hover:border-transparent focus:border-transparent"><i class="text-primary text-xs transition group-hover:text-white group-focus:text-white fa-brands fa-twitter" aria-hidden="true"></i>
+          <span class="fa-sr-only">Ping twitter account</span>
+          </a></li>
+          <li class=""><a href="#" class="group flex justify-center items-center w-6 h-6 border border-secondary-blue rounded-full transition hover:bg-primary focus:bg-primary hover:border-transparent focus:border-transparent"><i class="text-primary text-xs transition group-hover:text-white group-focus:text-white fa-brands fa-instagram" aria-hidden="true"></i>
+          <span class="fa-sr-only">Ping instagram account</span>
+          </a></li>
+        </ul>
+        <p class="text-xs">&copy; Copyright Ping. All rights reserved.</p>
       </footer>
     </section>
   </main>
 
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-
   <footer class="text-[11px] text-center text-neutral-gray mb-2">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-neutral-gray hover:text-neutral-black focus:text-neutral-black">Frontend Mentor</a>.
-    Coded by <a href="https://www.frontendmentor.io/profile/gtalin" class="text-neutral-gray hover:text-neutral-black focus:text-neutral-black">AJ</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-primary hover:text-neutral-black focus:text-neutral-black">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/gtalin" class="text-primary hover:text-secondary-blue focus:text-secondary-blue">AJ</a>.
   </footer>
 </body>
 </html>
