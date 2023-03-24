@@ -44,8 +44,8 @@ The screenshot for the desktop view with dropdown:
 
 ### Links
 
-- Solution URL: [Products preview card](https://github.com/gtalin/front-end-mentor/intro-section-dropdown-nav)
-- Live Site URL: [Products preview card](https://gtalin.github.io/front-end-mentor/intro-section-dropdown-nav)
+- Solution URL: [Intro section with dropdown nav](https://github.com/gtalin/front-end-mentor/intro-section-dropdown-nav)
+- Live Site URL: [Intro section with dropdown nav](https://gtalin.github.io/front-end-mentor/intro-section-dropdown-nav)
 
 ## My process
 

@@ -1,6 +1,6 @@
 # Frontend Mentor - Products preview card component solution
 
-This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Order summary card challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -10,6 +10,7 @@ This is a solution to the [Single price grid component challenge on Frontend Men
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
@@ -21,8 +22,9 @@ I am learning Tailwind CSS so built this using tailwind css.
 
 ### The challenge
 
-- View the optimal layout for the component depending on their device's screen size
-- See a hover state on desktop for the Sign Up call-to-action
+Users should be able to:
+
+- See hover states for interactive elements
 
 ### Screenshot
 
@@ -36,8 +38,8 @@ The screenshot for the mobile view:
 
 ### Links
 
-- Solution URL: [Single price grid component](https://github.com/gtalin/front-end-mentor/single-price-grid-component)
-- Live Site URL: [Single price grid component](https://gtalin.github.io/front-end-mentor/single-price-grid-component)
+- Solution URL: [Order summary component](https://github.com/gtalin/front-end-mentor/order-summary-component)
+- Live Site URL: [Order summary component](https://gtalin.github.io/front-end-mentor/order-summary-component)
 
 ## My process
 
@@ -46,7 +48,11 @@ The screenshot for the mobile view:
 - Semantic HTML5 markup
 - Mobile-first workflow
 - [Tailwind CSS](https://tailwindcss.com/)
+- Mobile-first workflow
 
+### What I learned
+
+**todo**
 
 ### Continued development
 

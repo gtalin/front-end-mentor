@@ -40,8 +40,8 @@ The screenshot for desktop view:
 
 ### Links
 
-- Solution URL: [Products preview card](https://github.com/gtalin/front-end-mentor/advice-generator-app)
-- Live Site URL: [Products preview card](https://gtalin.github.io/front-end-mentor/advice-generator-app)
+- Solution URL: [Advice generator app](https://github.com/gtalin/front-end-mentor/advice-generator-app)
+- Live Site URL: [Advice generator app](https://gtalin.github.io/front-end-mentor/advice-generator-app)
 
 ## My process
 

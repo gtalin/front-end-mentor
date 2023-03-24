@@ -43,8 +43,8 @@ The screenshot for the mobile view:
 
 ### Links
 
-- Solution URL: [Products preview card](https://github.com/gtalin/front-end-mentor/ping-coming-soon)
-- Live Site URL: [Products preview card](https://gtalin.github.io/front-end-mentor/ping-coming-soon)
+- Solution URL: [Ping coming soon](https://github.com/gtalin/front-end-mentor/ping-coming-soon)
+- Live Site URL: [Ping coming soon](https://gtalin.github.io/front-end-mentor/ping-coming-soon)
 
 ## My process
 

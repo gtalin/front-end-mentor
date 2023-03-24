@@ -43,8 +43,8 @@ The screenshot for the desktop view:
 
 ### Links
 
-- Solution URL: [Products preview card](https://github.com/gtalin/front-end-mentor/news-homepage)
-- Live Site URL: [Products preview card](https://gtalin.github.io/front-end-mentor/news-homepage)
+- Solution URL: [News Homepage](https://github.com/gtalin/front-end-mentor/news-homepage)
+- Live Site URL: [News Homepage](https://gtalin.github.io/front-end-mentor/news-homepage)
 
 ## My process
 

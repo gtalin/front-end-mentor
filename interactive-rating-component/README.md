@@ -44,8 +44,8 @@ Screenshot for the thank you state:
 
 ### Links
 
-- Solution URL: [Products preview card](https://github.com/gtalin/front-end-mentor/interactive-rating-component)
-- Live Site URL: [Products preview card](https://gtalin.github.io/front-end-mentor/interactive-rating-component/index.html)
+- Solution URL: [Interactive rating component](https://github.com/gtalin/front-end-mentor/interactive-rating-component)
+- Live Site URL: [Interactive rating component](https://gtalin.github.io/front-end-mentor/interactive-rating-component/index.html)
 
 ## My process
 

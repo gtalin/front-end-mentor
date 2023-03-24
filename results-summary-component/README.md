@@ -42,8 +42,8 @@ The screenshot for the desktop view:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Results summary component](https://github.com/gtalin/front-end-mentor/tree/master/results-summary-component)
+- Live Site URL: [Results summary component](https://gtalin.github.io/front-end-mentor/results-summary-component/build/)
 
 ## My process
 
@@ -79,4 +79,4 @@ Would like to do more projetcs using tailwindcss. I have also done several other
 
 ## Acknowledgments
 
-Learned a lot from the several yotube resources listed above. 
+Learned a lot from the several yotube resources listed above.
