@@ -14,8 +14,8 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          DEFAULT: 'hsl(225, 100%, 94%)',
-          bright: 'hsl(245, 75%, 52%)'
+          pale: 'hsl(225, 100%, 94%)',
+          DEFAULT: 'hsl(245, 75%, 52%)'
         },
         neutral: {
           pale: 'hsl(225, 100%, 98%)',
@@ -26,15 +26,21 @@ module.exports = {
 
       screens: {
         mobile: '375px',
+        card: '350px',
         medium: '600px',
         desktop: '1440px',
+      },
+      content: {
+        'pattern-mobile': 'url("./img/pattern-background-mobile.svg")',
+        'pattern-desktop': 'url("./img/pattern-background-desktop.svg")'
+
       },
       backgroundImage: {
         'pb-mobile': "url('./img/pattern-background-mobile.svg')",
         'pb-desktop': "url('./img/pattern-background-desktop.svg')",
       },
       boxShadow: {
-        'shadow-1': '5px 35px 60px -15px rgba(0, 0, 0, 0.3)',
+        'shadow-1': '0px 7px 16px 5px hsla(245, 75%, 52%, 0.3)',
         'shadow-2': '3px 3px 60px -15px rgba(0, 0, 0, 0.3), -1em 60px -15px rgba(0, 0, 0, 0.3)'
       }
 
