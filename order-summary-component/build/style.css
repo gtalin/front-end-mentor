@@ -567,6 +567,14 @@ html {
   min-height: 100vh;
 }
 
+.min-h-full {
+  min-height: 100%;
+}
+
+.min-h-\[100vp\] {
+  min-height: 100vp;
+}
+
 .w-full {
   width: 100%;
 }
@@ -744,6 +752,14 @@ html {
   position: absolute;
 }
 
+.before\:inset-0::before {
+  content: var(--tw-content);
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
 .before\:left-0::before {
   content: var(--tw-content);
   left: 0px;
@@ -764,9 +780,30 @@ html {
   height: 100vh;
 }
 
+.before\:h-auto::before {
+  content: var(--tw-content);
+  height: auto;
+}
+
+.before\:h-\[50vh\]::before {
+  content: var(--tw-content);
+  height: 50vh;
+}
+
 .before\:w-\[100vw\]::before {
   content: var(--tw-content);
   width: 100vw;
+}
+
+.before\:bg-red-500::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
+.before\:bg-pb-mobile::before {
+  content: var(--tw-content);
+  background-image: url('./img/pattern-background-mobile.svg');
 }
 
 .before\:bg-cover::before {
@@ -774,9 +811,24 @@ html {
   background-size: cover;
 }
 
+.before\:bg-contain::before {
+  content: var(--tw-content);
+  background-size: contain;
+}
+
 .before\:bg-center::before {
   content: var(--tw-content);
   background-position: center;
+}
+
+.before\:bg-bottom::before {
+  content: var(--tw-content);
+  background-position: bottom;
+}
+
+.before\:bg-no-repeat::before {
+  content: var(--tw-content);
+  background-repeat: no-repeat;
 }
 
 .before\:content-pattern-mobile::before {
@@ -819,8 +871,20 @@ html {
 }
 
 @media (min-width: 375px) {
+  .mobile\:before\:bg-pb-desktop::before {
+    content: var(--tw-content);
+    background-image: url('./img/pattern-background-desktop.svg');
+  }
+
   .mobile\:before\:content-pattern-desktop::before {
     --tw-content: url("./img/pattern-background-desktop.svg");
     content: var(--tw-content);
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:before\:bg-pb-desktop::before {
+    content: var(--tw-content);
+    background-image: url('./img/pattern-background-desktop.svg');
   }
 }

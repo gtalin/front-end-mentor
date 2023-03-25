@@ -52,7 +52,11 @@ The screenshot for the mobile view:
 
 ### What I learned
 
-**todo**
+To get the wave pattern in the background, we use the `before` pseudo element. However I was unable to change the size of the image. When the image was too large, I had set an `overflow-x` property on the body to prevent a horizontal scroll caused by the large image. However for very large screens, the image was a bit too small and the right half of the screen was left blank.
+
+This problem was because I was using the `content` property to display the image. A better option is to use the `background` property to display the message. For that we'll have to set a width and height for the `before` pseudo element. But we get more control over the dimension of the image. The [link](https://teamtreehouse.com/community/unable-to-resize-images-created-using-the-before-pseudoelement) for this.
+
+If we use `background` property instead of `content` property, we have a lot more control. We can use `background-size` and `background-position` properties to determine which part of the wave pattern we want to show.
 
 ### Continued development
 
@@ -61,6 +65,7 @@ Would like to do more projects using tailwindcss. Would also like to focus more 
 ### Useful resources
 
 - [Tailwind docs](https://tailwindcss.com/docs/)
+- [Size of images in before pseudo element](https://teamtreehouse.com/community/unable-to-resize-images-created-using-the-before-pseudoelement)
 
 ## Author
 
