@@ -1,5 +1,6 @@
 node_modules
 help.md
+.DS_Store
 
 results-summary-component/results-summary-component-main/
 results-summary-component/node_modules/
@@ -17,3 +18,4 @@ intro-section-with-dropdown-navigation-main
 single-price-grid-component-master
 ping-coming-soon-page-master
 order-summary-component-main
+sunnyside-agency-landing-page-main
