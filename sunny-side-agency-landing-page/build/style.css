@@ -878,6 +878,22 @@ h1, h2, h3, h4, h5, h6 {
   background-image: url("./img/mobile/image-header.jpg");
 }
 
+.bg-\[url\(\'\.\/img\/mobile\/image-graphic-design\.jpg\'\)\] {
+  background-image: url('./img/mobile/image-graphic-design.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/mobile\/image-photography\.jpg\'\)\] {
+  background-image: url('./img/mobile/image-photography.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/mobile\/image-stand-out\.jpg\'\)\] {
+  background-image: url('./img/mobile/image-stand-out.jpg');
+}
+
+.bg-\[url\(\'\.\/img\/mobile\/image-transform\.jpg\'\)\] {
+  background-image: url('./img/mobile/image-transform.jpg');
+}
+
 .bg-cover {
   background-size: cover;
 }
@@ -1273,6 +1289,22 @@ h1, h2, h3, h4, h5, h6 {
 
   .medium\:bg-hero-img-desktop {
     background-image: url("./img/desktop/image-header.jpg");
+  }
+
+  .medium\:bg-\[url\(\'\.\/img\/desktop\/image-graphic-design\.jpg\'\)\] {
+    background-image: url('./img/desktop/image-graphic-design.jpg');
+  }
+
+  .medium\:bg-\[url\(\'\.\/img\/desktop\/image-photography\.jpg\'\)\] {
+    background-image: url('./img/desktop/image-photography.jpg');
+  }
+
+  .medium\:bg-\[url\(\'\.\/img\/desktop\/image-stand-out\.jpg\'\)\] {
+    background-image: url('./img/desktop/image-stand-out.jpg');
+  }
+
+  .medium\:bg-\[url\(\'\.\/img\/desktop\/image-transform\.jpg\'\)\] {
+    background-image: url('./img/desktop/image-transform.jpg');
   }
 
   .medium\:p-0 {
