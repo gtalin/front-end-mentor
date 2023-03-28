@@ -13,69 +13,198 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 
   <!-- font awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> -->
 
   <link rel="stylesheet" href="./build/style.css">
 
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
   </style>
 
   <script src="./src/main.js" async></script>
 </head>
 <body class="">
+  <header class="absolute w-full py-8 z-10">
+    <div class="debug  max-w-screen-desktop px-4 md:mx-auto flex justify-between">
+      <a href="#" aria-label="home">
+        <img src="./build/img/logo.svg" alt="Sunny Side" aria-hidden="true">
+      </a>
+      <nav class="text-white flex space-x-4">
+        <!-- menu button -->
+        <!-- <button aria-label="menu button">
+          <img src="./build/img/icon-hamburger.svg" alt="" aria-hidden="true">
+        </button> -->
+        <!-- menu items -->
+        <ul class="">
+          <li><a href="#">About</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Services</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Projects</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        
+      </nav>
+    </div>
+  </header>
+  
 
-  About
-  Services
-  Projects
-  Contact
+  <main class="">
 
-  We are creatives
+    <section class="debug pt-16 bg-hero-img-mobile md:bg-hero-img-desktop min-h-[100vh] bg-bottom bg-cover relative">
+      <div class="flex flex-col justify-center items-center gap-4 mt-16">
+        <h1 class="text-white text-6xl text-center ">We are creatives</h1>
+        <button aria-label="press to go down" class="cursor-pointer absolute top-1/2 left-1/2 transform -translate-y-[50%] -translate-x-[50%]">
+          <img src="./build/img/icon-arrow-down.svg" alt="" aria-hidden="true">
+        </button>
+    </div>
+    </section>
 
-  Transform your brand
+    <section>
+      <ul class="text-center md:text-left">
+        <li class="md:grid md:grid-cols-2 ">
+          <div class="min-h-[50vh] grid content-center gap-4 justify-center p-8 md:justify-end md:pr-20">
+            <h2 class="text-3xl max-w-[16ch] text-neutral-desaturated-blue">Transform your brand</h2>
+            <p class="text-neutral-dark-gray-blue max-w-[45ch]">We are a full-service creative agency specializing in helping brands grow fast.
+            Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <a href="#" class="text-neutral-desaturated-blue underline underline-offset-2 decoration-4 decoration-primary-red uppercase tracking-widest text-xs font-serif">Learn more</a>
+          </div>
+          <div class="bg-[url('/build/img/mobile/image-transform.jpg')] md:bg-[url('/build/img/desktop/image-transform.jpg')] bg-cover  bg-center bg-no-repeat min-h-[50vh]">
+            
+          </div>
+        </li>
+        <li class="md:grid md:grid-cols-2">
+          
+          <div class="min-h-[50vh] grid content-center justify-center gap-4 p-8 md:col-start-2 md:justify-start md:pl-20  md:row-start-1">
+            <h2 class="text-3xl max-w-[16ch] text-neutral-desaturated-blue">Stand out to the right audience</h2>
+            <p class="text-neutral-dark-gray-blue max-w-[45ch]">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+            <a href="#" class="text-neutral-desaturated-blue underline underline-offset-2 decoration-4 decoration-primary-red uppercase tracking-widest text-xs font-serif">Learn more</a>
+          </div>
 
-  We are a full-service creative agency specializing in helping brands grow fast.
-  Engage your clients through compelling visuals that do most of the marketing for you.
+          <div class="bg-[url('/build/img/mobile/image-stand-out.jpg')] md:bg-[url('/build/img/desktop/image-stand-out.jpg')] bg-cover  bg-center bg-no-repeat min-h-[50vh] col-start-1 row-start-1">
+            
+          </div>
+          
+        </li>
+      </ul>
 
-  Learn more
+      <div>
 
-  Stand out to the right audience
+      </div>
+    </section>
 
-  Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+    <section class="md:grid md:grid-cols-2 ">
+      <div class="bg-[url('/build/img/mobile/image-graphic-design.jpg')] md:bg-[url('/build/img/desktop/image-graphic-design.jpg')] bg-cover  bg-top bg-no-repeat min-h-[85vh] grid content-end justify-items-center gap-4 p-8 text-center md:min-h-[60vh]">
+        <h2 class="text-3xl max-w-[16ch] text-primary-dark-blue">Graphic design</h2>
+        <p class="text-primary-dark-blue max-w-[45ch]">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+      </div>
 
-  Learn more
+      <div class="bg-[url('/build/img/mobile/image-photography.jpg')] md:bg-[url('/build/img/desktop/image-photography.jpg')] bg-cover bg-top min-h-[85vh] grid content-end justify-items-center gap-4 p-8 text-center md:min-h-[60vh] ">
+        <h2 class="text-3xl max-w-[16ch] text-primary-dark-blue">Photography</h2>
+        <p class="text-primary-dark-blue max-w-[45ch]">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+      </div>
+    </section>
 
-  Graphic design
-  Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+    <section class="text-center mt-6 mb-12 max-w-screen-xl mx-auto">
+      <h2 class="mb-10 uppercase tracking-widest text-2xl text-neutral-dark-gray-blue ">Client testimonials</h2>
+      <ul class="text-center md:flex">
+        <li class="space-y-6 text-neutral-desaturated-blue mb-12 max-w-[30ch] mx-auto">
+          <img src="./build/img/image-emily.jpg" alt="client emily's image" class="rounded-full mb-6 w-20 h-20 m-auto">
+          <p class="text-neutral-vd-gray-blue">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <p>
+            <span class="font-serif block font-black">Emily R.</span>
+            <span class="text-neutral-dark-gray-blue">Marketing Director</span>
+          </p>
+        </li>
 
-  Photography
-  Increase your credibility by getting the most stunning, high-quality photos that improve your business image.
+        <li class="space-y-6 mb-12 text-neutral-desaturated-blue max-w-[30ch] mx-auto">
+          <img src="./build/img/image-thomas.jpg" alt="client Thoma's image" class="rounded-full mb-6 w-20 h-20 m-auto">
+          <p class="text-neutral-vd-gray-blue">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <p>
+            <span class="font-serif block font-black">Thomas S.</span>
+            <span class="text-neutral-dark-gray-blue">Chief Operating Officer</span>
+          </p>
+        </li>
 
-  Client testimonials
+        <li class="space-y-6 mb-12 text-neutral-desaturated-blue max-w-[30ch] mx-auto">
+          <img src="./build/img/image-jennie.jpg" alt="client Jennie's image" class="rounded-full mb-6 w-20 h-20 mx-auto">
+          <p class="text-neutral-vd-gray-blue">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <p>
+            <span class="font-serif block font-black">Jennie F.</span>
+            <span class="text-neutral-dark-gray-blue">Business Owner</span>
+          </p>
+        </li>
+      </ul>
+    </section>
 
-  We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.
-  Emily R.
-  Marketing Director
+    <section class="grid grid-cols-2 md:grid-cols-4 mx-auto justify-items-center">
 
-  Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.
-  Thomas S.
-  Chief Operating Officer
+      <picture>
+        <source media="(max-width: 799px)" srcset="./build/img/mobile/image-gallery-milkbottles.jpg" />
+        <source media="(min-width: 800px)" srcset="./build/img/desktop/image-gallery-milkbottles.jpg" />
+        <img src="./build/img/desktop/image-gallery-milkbottles.jpg" alt="image gallery milk bottles" />
+      </picture>
 
-  Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-  Jennie F.
-  Business Owner
+      <picture>
+        <source media="(max-width: 799px)" srcset="./build/img/mobile/image-gallery-orange.jpg" />
+        <source media="(min-width: 800px)" srcset="./build/img/desktop/image-gallery-orange.jpg" />
+        <img src="./build/img/desktop/image-gallery-orange.jpg" alt="image gallery orange" />
+      </picture>
 
-  About
-  Services
-  Projects
-  Contact
+      <picture>
+        <source media="(max-width: 799px)" srcset="./build/img/mobile/image-gallery-cone.jpg" />
+        <source media="(min-width: 800px)" srcset="./build/img/desktop/image-gallery-cone.jpg" />
+        <img src="./build/img/desktop/image-gallery-cone.jpg" alt="image gallery cone" />
+      </picture>
 
+      <picture>
+        <source media="(max-width: 799px)" srcset="./build/img/mobile/image-gallery-sugar-cubes.jpg" />
+        <source media="(min-width: 800px)" srcset="./build/img/desktop/image-gallery-sugar-cubes.jpg" />
+        <img src="./build/img/desktop/image-gallery-sugar-cubes.jpg" alt="image gallery sugar cubes" />
+      </picture>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://www.frontendmentor.io/profile/gtalin">AJ</a>.
+    </section>
+
+  </main>
+
+  
+
+  <footer class="bg-primary-dark-cyan/60 ">
+    <div class="text-center p-20 pb-8 flex flex-col justify-center items-center">
+    <a href="#" aria-label="home" class="mb-10">
+      <img src="./build/img/logo.svg" alt="sunnyside" aria-hidden="true"></a>
+    <nav>
+      <ul class="mb-16 flex gap-2 space-x-6">
+        <li><a href="#" class="text-neutral-desaturated-blue">About</a></li>
+        <li><a href="#" class="text-neutral-desaturated-blue">Services</a></li>
+        <li><a href="#" class="text-neutral-desaturated-blue">Projects</a></li>
+      </ul>
+
+      <ul class="mb-10 flex justify-center gap-2 space-x-6">
+        <li><a href="#"  aria-label="facebook link"><img src="./build/img/icon-facebook.svg" alt="icon-facebook" aria-hidden="true"></a></li>
+
+        <li><a href="#"  aria-label="instagram link"><img src="./build/img/icon-instagram.svg" alt="icon-instagram" aria-hidden="true"></a></li>
+
+        <li><a href="#" aria-label="twitter link"><img src="./build/img/icon-twitter.svg" alt="icon-twitter" aria-hidden="true"></a></li>
+
+        <li><a href="#" aria-label="pinterest link"><img src="./build/img/icon-pinterest.svg" alt="icon-pinterest" aria-hidden="true"></a></li>
+      </ul>
+
+    </nav>
   </div>
+
+    <div class="text-xs text-center py-2 text-neutral-vd-gray-blue">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-neutral-desaturated-blue hover:text-primary-red focus:text-primary-red">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/gtalin" class="text-neutral-desaturated-blue hover:text-primary-red focus:text-primary-red">AJ</a>.
+    </div>
+  </footer>
+
+  
 
 </body>
 </html>

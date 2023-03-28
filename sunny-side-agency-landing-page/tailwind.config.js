@@ -16,7 +16,7 @@ module.exports = {
       colors: {
         primary: {
           red: 'hsl(7, 99%, 70%)',
-          yellow: 'hsl(51, 100%, 49%))',
+          yellow: 'hsl(51, 100%, 49%)',
           cyan: 'hsl(167, 40%, 24%)',
           'dark-blue': 'hsl(198, 62%, 26%)',
           'dark-cyan': 'hsl(168, 34%, 41%)'
@@ -40,8 +40,8 @@ module.exports = {
 
       },
       backgroundImage: {
-        'pb-mobile': "url('./img/pattern-background-mobile.svg')",
-        'pb-desktop': "url('./img/pattern-background-desktop.svg')",
+        'hero-img-mobile': 'url("./img/mobile/image-header.jpg")',
+        'hero-img-desktop': 'url("./img/desktop/image-header.jpg")'
       },
       boxShadow: {
         'shadow-1': '0px 7px 16px 5px hsla(245, 75%, 52%, 0.3)',
