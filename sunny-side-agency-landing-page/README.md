@@ -92,6 +92,9 @@ Applied `scroll-behaviour: smooth` for people with `prefers reduced motion` not 
 
 The [motion preference media query](https://www.smashingmagazine.com/2021/10/respecting-users-motion-preferences/) link.
 
+- Add a bounce animation to the down arrow. Again this one should be activated only for people with no preference set for `prefers reduced motion`. This is quite easy to do in tailwind css. There already is an inbuilt bounce animation with `animate-bouce` and we can apply it for people who have not set `prefers reduced motion` to `true`:
+  `motion-safe:animate-bounce`
+
 ### Continued development
 
 Would like to do more projects using tailwindcss. Would also like to focus more on accessibility.
@@ -108,6 +111,7 @@ Would like to do more projects using tailwindcss. Would also like to focus more 
 - [smooth scrolling](https://css-tricks.com/snippets/jquery/smooth-scrolling/) I used the native browser solution for smooth scroll and not the JS solution. But it would be interesting to explore.
 - [smooth scroll and accessibility](https://css-tricks.com/smooth-scrolling-accessibility/) The smooth scroll feature of the browser takes care of accessibility so this was not needed at the moment.
 - [motion preference media query](https://www.smashingmagazine.com/2021/10/respecting-users-motion-preferences/)
+- [Reduced motion media query](https://css-tricks.com/introduction-reduced-motion-media-query/)
 
 ## Author
 

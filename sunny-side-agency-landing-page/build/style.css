@@ -631,6 +631,10 @@ h1, h2, h3, h4, h5, h6 {
   top: 80px;
 }
 
+.bottom-\[25vh\] {
+  bottom: 25vh;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1110,6 +1114,24 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8,0,1,1);
+    }
+
+    50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0,0,0.2,1);
+    }
+  }
+
+  .motion-safe\:animate-bounce {
+    animation: bounce 1s infinite;
+  }
+}
+
 @media (min-width: 600px) {
   .medium\:relative {
     position: relative;
@@ -1129,6 +1151,10 @@ h1, h2, h3, h4, h5, h6 {
 
   .medium\:top-auto {
     top: auto;
+  }
+
+  .medium\:bottom-\[30vh\] {
+    bottom: 30vh;
   }
 
   .medium\:col-start-2 {
@@ -1275,7 +1301,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 1024px) {
+  .lg\:bottom-\[35vh\] {
+    bottom: 35vh;
+  }
+
   .lg\:min-h-\[70vh\] {
     min-height: 70vh;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:bottom-\[50vh\] {
+    bottom: 50vh;
+  }
+
+  .xl\:bottom-\[40vh\] {
+    bottom: 40vh;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:bottom-\[40vh\] {
+    bottom: 40vh;
+  }
+
+  .\32xl\:bottom-\[50vh\] {
+    bottom: 50vh;
   }
 }
