@@ -2,7 +2,6 @@
 
 This is a solution to the [Sunnyside agency landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/sunnyside-agency-landing-page-7yVs3B6ef). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-
 ## Table of contents
 
 - [Overview](#overview)
@@ -55,7 +54,19 @@ The screenshot for the mobile view:
 
 ### What I learned
 
-**todo**
+Various methods to change SVG color.
+To change the image color, without embedding SVG code in the `html` and using it only as an image, to change color, we can apply `filter`.
+The following works for our case:
+`filter:  brightness(0) invert(1);`
+
+We're making the triangle with `before` pseudo element. For larger screens though we have to remove that triangle.
+In CSS, to remove a `before` pseudo element, we can do `content: none`. :
+
+```css
+ul:before {
+  content: none;
+}
+```
 
 ### Continued development
 
@@ -64,7 +75,9 @@ Would like to do more projects using tailwindcss. Would also like to focus more 
 ### Useful resources
 
 - [Tailwind docs](https://tailwindcss.com/docs/)
-
+- [Change SVG color](https://stackoverflow.com/questions/22252472/how-can-i-change-the-color-of-an-svg-element)
+- [filter image](https://stackoverflow.com/questions/52829623/how-to-make-a-color-white-using-filter-property-in-css)
+- [Remove pseudo element](https://stackoverflow.com/questions/3012716/css-how-to-remove-pseudo-elements-after-before)
 
 ## Author
 

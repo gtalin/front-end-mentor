@@ -17,3 +17,33 @@
     border: 2px solid goldenrod;
   }
 }
+
+@layer components {
+  .btn {
+    @apply uppercase font-serif tracking-widest font-bold text-xs text-neutral-desaturated-blue rounded-3xl p-4 text-center inline-block;
+  }
+
+  .btn-sm-screen {
+    @apply bg-primary-yellow 
+  }
+
+  .btn-lg-screen {
+    @apply bg-white transition hover:bg-transparent/5 focus:bg-transparent/5;
+  }
+
+  .underline-link {
+    @apply text-neutral-desaturated-blue underline underline-offset-auto decoration-[5px] uppercase tracking-widest text-xs font-serif transition hover:underline-offset-1 focus:underline-offset-1;
+  }
+
+  .underline-link-yellow {
+    @apply decoration-primary-yellow/50 hover:decoration-primary-yellow focus:decoration-primary-yellow;
+  }
+
+  .underline-link-red {
+    @apply decoration-primary-red/50 hover:decoration-primary-red focus:decoration-primary-red;
+  }
+
+  .custom-filter {
+    @apply brightness-0 invert;
+  }
+}

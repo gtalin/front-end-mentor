@@ -26,27 +26,28 @@
 </head>
 <body class="">
   <header class="absolute w-full py-8 z-10">
-    <div class="debug  max-w-screen-desktop px-4 md:mx-auto flex justify-between">
-      <a href="#" aria-label="home">
+    <div class="  max-w-screen-desktop px-4 flex justify-between items-center medium:mx-auto ">
+      <a href="#" aria-label="home" class="">
         <img src="./build/img/logo.svg" alt="Sunny Side" aria-hidden="true">
       </a>
-      <nav class="text-white flex space-x-4">
+      <nav class="text-white">
         <!-- menu button -->
-        <!-- <button aria-label="menu button">
+        <button aria-label="menu button" class="menu-button medium:hidden">
           <img src="./build/img/icon-hamburger.svg" alt="" aria-hidden="true">
-        </button> -->
+        </button>
         <!-- menu items -->
-        <ul class="">
-          <li><a href="#">About</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Services</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Projects</a></li>
-        </ul>
-        <ul>
-          <li><a href="#">Contact</a></li>
+        <ul class="menu-items space-y-8 absolute w-[90vw] mx-auto left-0 right-0 top-[80px] mt-4 mb-8 text-center bg-white p-8 text-neutral-vd-gray-blue hidden opacity-0 translate-x-1/2 transition-all duration-500 delay-150 medium:opacity-100 medium:translate-x-0 medium:relative medium:left-auto medium:right-auto medium:mt-0 medium:mb-0 medium:bg-transparent medium:p-0 medium:w-auto medium:flex medium:flex-row medium:space-x-4 medium:space-y-0 medium:items-center medium:top-auto before:content-[''] before:absolute before:w-0 before:h-0 before:top-[-30px] before:right-0 before:z-11 before:border-b-[30px] before:border-b-white before:border-l-[30px] before:border-l-transparent medium:before:content-none ">
+          <li class="py-4"><a href="#" class=" text-neutral-vd-gray-blue medium:text-white">About</a></li>
+        
+          <li class="py-4"><a href="#" class=" text-neutral-vd-gray-blue medium:text-white">Services</a></li>
+       
+          <li class="py-4"><a href="#" class=" text-neutral-vd-gray-blue medium:text-white">Projects</a></li>
+       
+          <li class="">
+            <a href="#" class="btn btn-sm-screen  medium:btn-lg-screen 
+            ">
+            Contact</a>
+          </li>
         </ul>
         
       </nav>
@@ -56,37 +57,37 @@
 
   <main class="">
 
-    <section class="debug pt-16 bg-hero-img-mobile md:bg-hero-img-desktop min-h-[100vh] bg-bottom bg-cover relative">
+    <section class=" pt-16 bg-hero-img-mobile medium:bg-hero-img-desktop min-h-[100vh] bg-bottom bg-cover relative">
       <div class="flex flex-col justify-center items-center gap-4 mt-16">
         <h1 class="text-white text-6xl text-center ">We are creatives</h1>
-        <button aria-label="press to go down" class="cursor-pointer absolute top-1/2 left-1/2 transform -translate-y-[50%] -translate-x-[50%]">
+        <button aria-label="press to go down" class="cursor-pointer absolute bottom-[20vh] medium:bottom-[35vh] left-1/2 transform -translate-y-[50%] -translate-x-[50%]">
           <img src="./build/img/icon-arrow-down.svg" alt="" aria-hidden="true">
         </button>
     </div>
     </section>
 
     <section>
-      <ul class="text-center md:text-left">
-        <li class="md:grid md:grid-cols-2 ">
-          <div class="min-h-[50vh] grid content-center gap-4 justify-center p-8 md:justify-end md:pr-20">
+      <ul class="text-center medium:text-left">
+        <li class="medium:grid medium:grid-cols-2 ">
+          <div class="min-h-[50vh] grid content-center gap-4 justify-center p-8 medium:justify-end medium:pr-20 medium:min-h-[60vh] lg:min-h-[70vh]">
             <h2 class="text-3xl max-w-[16ch] text-neutral-desaturated-blue">Transform your brand</h2>
             <p class="text-neutral-dark-gray-blue max-w-[45ch]">We are a full-service creative agency specializing in helping brands grow fast.
             Engage your clients through compelling visuals that do most of the marketing for you.</p>
-            <a href="#" class="text-neutral-desaturated-blue underline underline-offset-2 decoration-4 decoration-primary-red uppercase tracking-widest text-xs font-serif">Learn more</a>
+            <a href="#" class="underline-link underline-link-yellow">Learn more</a>
           </div>
-          <div class="bg-[url('/build/img/mobile/image-transform.jpg')] md:bg-[url('/build/img/desktop/image-transform.jpg')] bg-cover  bg-center bg-no-repeat min-h-[50vh]">
+          <div class="bg-[url('/build/img/mobile/image-transform.jpg')] medium:bg-[url('/build/img/desktop/image-transform.jpg')] bg-cover  bg-center bg-no-repeat min-h-[50vh] medium:min-h-[60vh] lg:min-h-[70vh]">
             
           </div>
         </li>
-        <li class="md:grid md:grid-cols-2">
+        <li class="medium:grid medium:grid-cols-2">
           
-          <div class="min-h-[50vh] grid content-center justify-center gap-4 p-8 md:col-start-2 md:justify-start md:pl-20  md:row-start-1">
+          <div class="min-h-[50vh] grid content-center justify-center gap-4 p-8 medium:col-start-2 medium:justify-start medium:pl-20  medium:row-start-1 medium:min-h-[60vh] lg:min-h-[70vh]">
             <h2 class="text-3xl max-w-[16ch] text-neutral-desaturated-blue">Stand out to the right audience</h2>
             <p class="text-neutral-dark-gray-blue max-w-[45ch]">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
-            <a href="#" class="text-neutral-desaturated-blue underline underline-offset-2 decoration-4 decoration-primary-red uppercase tracking-widest text-xs font-serif">Learn more</a>
+            <a href="#" class="underline-link underline-link-red">Learn more</a>
           </div>
 
-          <div class="bg-[url('/build/img/mobile/image-stand-out.jpg')] md:bg-[url('/build/img/desktop/image-stand-out.jpg')] bg-cover  bg-center bg-no-repeat min-h-[50vh] col-start-1 row-start-1">
+          <div class="bg-[url('/build/img/mobile/image-stand-out.jpg')] medium:bg-[url('/build/img/desktop/image-stand-out.jpg')] bg-cover  bg-center bg-no-repeat min-h-[50vh] col-start-1 row-start-1 medium:min-h-[60vh] lg:min-h-[70vh]">
             
           </div>
           
@@ -98,13 +99,13 @@
       </div>
     </section>
 
-    <section class="md:grid md:grid-cols-2 ">
-      <div class="bg-[url('/build/img/mobile/image-graphic-design.jpg')] md:bg-[url('/build/img/desktop/image-graphic-design.jpg')] bg-cover  bg-top bg-no-repeat min-h-[85vh] grid content-end justify-items-center gap-4 p-8 text-center md:min-h-[60vh]">
+    <section class="medium:grid medium:grid-cols-2 ">
+      <div class="bg-[url('/build/img/mobile/image-graphic-design.jpg')] medium:bg-[url('/build/img/desktop/image-graphic-design.jpg')] bg-cover  bg-top bg-no-repeat min-h-[85vh] grid content-end justify-items-center gap-4 p-8 text-center medium:min-h-[60vh] lg:min-h-[70vh]">
         <h2 class="text-3xl max-w-[16ch] text-primary-dark-blue">Graphic design</h2>
         <p class="text-primary-dark-blue max-w-[45ch]">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
       </div>
 
-      <div class="bg-[url('/build/img/mobile/image-photography.jpg')] md:bg-[url('/build/img/desktop/image-photography.jpg')] bg-cover bg-top min-h-[85vh] grid content-end justify-items-center gap-4 p-8 text-center md:min-h-[60vh] ">
+      <div class="bg-[url('/build/img/mobile/image-photography.jpg')] medium:bg-[url('/build/img/desktop/image-photography.jpg')] bg-cover bg-top min-h-[85vh] grid content-end justify-items-center gap-4 p-8 text-center medium:min-h-[60vh] lg:min-h-[70vh]">
         <h2 class="text-3xl max-w-[16ch] text-primary-dark-blue">Photography</h2>
         <p class="text-primary-dark-blue max-w-[45ch]">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
       </div>
@@ -174,33 +175,42 @@
 
   
 
-  <footer class="bg-primary-dark-cyan/60 ">
+  <footer id="footer" class="bg-primary-dark-cyan/60 ">
     <div class="text-center p-20 pb-8 flex flex-col justify-center items-center">
     <a href="#" aria-label="home" class="mb-10">
-      <img src="./build/img/logo.svg" alt="sunnyside" aria-hidden="true"></a>
+      <img src="./build/img/logoDark.svg" alt="sunnyside" aria-hidden="true"></a>
     <nav>
       <ul class="mb-16 flex gap-2 space-x-6">
-        <li><a href="#" class="text-neutral-desaturated-blue">About</a></li>
-        <li><a href="#" class="text-neutral-desaturated-blue">Services</a></li>
-        <li><a href="#" class="text-neutral-desaturated-blue">Projects</a></li>
+        <li><a href="#" class="text-neutral-desaturated-blue hover:text-white focus:text-white transition">About</a></li>
+        <li><a href="#" class="text-neutral-desaturated-blue hover:text-white focus:text-white transition">Services</a></li>
+        <li><a href="#" class="text-neutral-desaturated-blue hover:text-white focus:text-white transition">Projects</a></li>
       </ul>
 
       <ul class="mb-10 flex justify-center gap-2 space-x-6">
-        <li><a href="#"  aria-label="facebook link"><img src="./build/img/icon-facebook.svg" alt="icon-facebook" aria-hidden="true"></a></li>
+        <li><a href="#"  aria-label="facebook link" class="group">
+          <img src="./build/img/icon-facebook.svg" alt="icon-facebook" aria-hidden="true" class="transition group-hover:custom-filter group-focus:custom-filter">
+          
+        </a></li>
 
-        <li><a href="#"  aria-label="instagram link"><img src="./build/img/icon-instagram.svg" alt="icon-instagram" aria-hidden="true"></a></li>
+        <li><a href="#"  aria-label="instagram link" class="group">
+          <img src="./build/img/icon-instagram.svg" alt="icon-instagram" aria-hidden="true" class="transition group-hover:custom-filter group-focus:custom-filter">
+        </a></li>
 
-        <li><a href="#" aria-label="twitter link"><img src="./build/img/icon-twitter.svg" alt="icon-twitter" aria-hidden="true"></a></li>
+        <li><a href="#" aria-label="twitter link" class="group">
+          <img src="./build/img/icon-twitter.svg" alt="icon-twitter" aria-hidden="true" class="transition group-hover:custom-filter group-focus:custom-filter">
+        </a></li>
 
-        <li><a href="#" aria-label="pinterest link"><img src="./build/img/icon-pinterest.svg" alt="icon-pinterest" aria-hidden="true"></a></li>
+        <li><a href="#" aria-label="pinterest link" class="group">
+          <img src="./build/img/icon-pinterest.svg" alt="icon-pinterest" aria-hidden="true" class="transition group-hover:custom-filter group-focus:custom-filter">
+        </a></li>
       </ul>
 
     </nav>
   </div>
 
-    <div class="text-xs text-center py-2 text-neutral-vd-gray-blue">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-neutral-desaturated-blue hover:text-primary-red focus:text-primary-red">Frontend Mentor</a>.
-      Coded by <a href="https://www.frontendmentor.io/profile/gtalin" class="text-neutral-desaturated-blue hover:text-primary-red focus:text-primary-red">AJ</a>.
+    <div class="text-xs text-center py-2 text-primary-dark-blue">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-neutral-desaturated-blue hover:text-white focus:text-white">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/gtalin" class="text-neutral-desaturated-blue hover:text-white focus:text-white">AJ</a>.
     </div>
   </footer>
 
