@@ -73,6 +73,25 @@ ul:before {
 
 We have 2 navigation elements on the page. One is in the `header` and other is in `footer`. The one in `header` is the `main` navigation element so we add an `aria-label` of `main` to it. And to the one in `footer`, we add an `aria-label` of `footer`.
 
+- To add smooth scrolling to the page, used the property `scroll-behavior`. Added `scroll-behavior: smooth;` to `html`.
+
+For browsers that do not support smooth scrolling, there is a [JS solution as well](https://css-tricks.com/snippets/jquery/smooth-scrolling/).
+
+The native solution is preferred becuase if we implement smooth scrolling with JS, we might have to take care of `focus-changing` ourself. As is evident by the above mentioned link.
+While implementing smooth scrolling though, it should be a good idea to disable it for people who have `prefers reduced motion set to true`. Or better still to enable it only for people who have not set `prefers-reduced-motion` to true. Because this property is not supported by all browsers, it is not a good idea to enable smooth scrolling for all and then disbale it for people who prefer reduced motion.
+
+Applied `scroll-behaviour: smooth` for people with `prefers reduced motion` not set by using media query. Like so:
+
+```css
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+```
+
+The [motion preference media query](https://www.smashingmagazine.com/2021/10/respecting-users-motion-preferences/) link.
+
 ### Continued development
 
 Would like to do more projects using tailwindcss. Would also like to focus more on accessibility.
@@ -86,6 +105,9 @@ Would like to do more projects using tailwindcss. Would also like to focus more 
 - [label to identify each navigation menu](https://www.w3.org/WAI/tutorials/page-structure/regions/)
 - [menu structure](https://www.w3.org/WAI/tutorials/menus/structure/)
 - [aria label examples](https://www.aditus.io/aria/aria-label/#example-3-multiple-navigation-landmarks)
+- [smooth scrolling](https://css-tricks.com/snippets/jquery/smooth-scrolling/) I used the native browser solution for smooth scroll and not the JS solution. But it would be interesting to explore.
+- [smooth scroll and accessibility](https://css-tricks.com/smooth-scrolling-accessibility/) The smooth scroll feature of the browser takes care of accessibility so this was not needed at the moment.
+- [motion preference media query](https://www.smashingmagazine.com/2021/10/respecting-users-motion-preferences/)
 
 ## Author
 
