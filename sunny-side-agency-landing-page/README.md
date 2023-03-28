@@ -54,19 +54,24 @@ The screenshot for the mobile view:
 
 ### What I learned
 
-Various methods to change SVG color.
-To change the image color, without embedding SVG code in the `html` and using it only as an image, to change color, we can apply `filter`.
-The following works for our case:
-`filter:  brightness(0) invert(1);`
+- Various methods to change SVG color.
+  To change the image color, without embedding SVG code in the `html` and using it only as an image, to change color, we can apply `filter`.
+  The following works for our case:
+  `filter:  brightness(0) invert(1);`
 
-We're making the triangle with `before` pseudo element. For larger screens though we have to remove that triangle.
-In CSS, to remove a `before` pseudo element, we can do `content: none`. :
+- We're making the triangle with `before` pseudo element. For larger screens though we have to remove that triangle.
+  In CSS, to remove a `before` pseudo element, we can do `content: none`. :
 
 ```css
 ul:before {
   content: none;
 }
 ```
+
+- If there is more than one navigation menu, then as per accessibility rules, we should use `aria-label` to identify each navigation menu. For reference, [link 1](https://www.w3.org/WAI/tutorials/page-structure/regions/) [link 2](https://www.w3.org/WAI/tutorials/menus/structure/)
+  Another great [link](https://www.aditus.io/aria/aria-label/#example-3-multiple-navigation-landmarks) for `aria-label` usage.
+
+We have 2 navigation elements on the page. One is in the `header` and other is in `footer`. The one in `header` is the `main` navigation element so we add an `aria-label` of `main` to it. And to the one in `footer`, we add an `aria-label` of `footer`.
 
 ### Continued development
 
@@ -78,6 +83,9 @@ Would like to do more projects using tailwindcss. Would also like to focus more 
 - [Change SVG color](https://stackoverflow.com/questions/22252472/how-can-i-change-the-color-of-an-svg-element)
 - [filter image](https://stackoverflow.com/questions/52829623/how-to-make-a-color-white-using-filter-property-in-css)
 - [Remove pseudo element](https://stackoverflow.com/questions/3012716/css-how-to-remove-pseudo-elements-after-before)
+- [label to identify each navigation menu](https://www.w3.org/WAI/tutorials/page-structure/regions/)
+- [menu structure](https://www.w3.org/WAI/tutorials/menus/structure/)
+- [aria label examples](https://www.aditus.io/aria/aria-label/#example-3-multiple-navigation-landmarks)
 
 ## Author
 
