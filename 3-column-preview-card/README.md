@@ -33,10 +33,6 @@ The screenshot for desktop view:
 
 ![](./screenshot-desktop.png)
 
-The screenshot for the mobile view:
-
-![](./screenshot-mobile.png)
-
 ### Links
 
 - Solution URL: [3 column preview card](https://github.com/gtalin/front-end-mentor/3-column-preview-card)
@@ -54,7 +50,7 @@ The screenshot for the mobile view:
 
 ### What I learned
 
-**todo**
+Used `sr-only` class to add an `h2` heading to `section`. Without using an `h2` I was getting an html validation error asking to switch from `section` to `div` if there is no heading. The `section` did not have a visual heading so added a screen reader only heading with `sr-only`
 
 ### Continued development
 

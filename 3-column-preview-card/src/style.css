@@ -24,5 +24,19 @@
 }
 
 @layer components {
-  
+  .btn {
+    @apply inline-block bg-neutral-transparent-white text-primary-bright-orange py-4 px-8 font-cursive rounded-3xl border-2 border-transparent transition hover:bg-transparent hover:border-neutral-transparent-white hover:text-neutral-transparent-white focus:bg-transparent focus:border-neutral-transparent-white focus:text-neutral-transparent-white;
+  }
+
+  .btn-orange {
+    @apply text-primary-bright-orange;
+  }
+
+  .btn-dark-cyan {
+    @apply text-primary-dark-cyan;
+  }
+
+  .btn-very-dark-cyan {
+    @apply text-primary-very-dark-cyan;
+  }
 }

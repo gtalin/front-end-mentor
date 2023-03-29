@@ -531,13 +531,176 @@ h1, h2, h3, h4, h5, h6 {
   --tw-backdrop-sepia:  ;
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.btn {
+  display: inline-block;
+  border-radius: 1.5rem;
+  border-width: 2px;
+  border-color: transparent;
+  background-color: hsla(0, 0%, 100%, 0.75);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: Big Shoulders Display;
+  --tw-text-opacity: 1;
+  color: hsl(31 77% 52% / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
-.max-w-\[1800px\] {
-  max-width: 1800px;
+.btn:hover {
+  border-color: hsla(0, 0%, 100%, 0.75);
+  background-color: transparent;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn:focus {
+  border-color: hsla(0, 0%, 100%, 0.75);
+  background-color: transparent;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.btn-orange {
+  --tw-text-opacity: 1;
+  color: hsl(31 77% 52% / var(--tw-text-opacity));
+}
+
+.btn-dark-cyan {
+  --tw-text-opacity: 1;
+  color: hsl(184 100% 22% / var(--tw-text-opacity));
+}
+
+.btn-very-dark-cyan {
+  --tw-text-opacity: 1;
+  color: hsl(179 100% 13% / var(--tw-text-opacity));
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom-10 {
+  bottom: 2.5rem;
+}
+
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.min-h-\[100vh\] {
+  min-height: 100vh;
+}
+
+.max-w-xs {
+  max-width: 20rem;
+}
+
+.max-w-\[300px\] {
+  max-width: 300px;
+}
+
+.max-w-\[250px\] {
+  max-width: 250px;
+}
+
+.max-w-\[240px\] {
+  max-width: 240px;
+}
+
+.max-w-\[220px\] {
+  max-width: 220px;
+}
+
+.max-w-\[280px\] {
+  max-width: 280px;
+}
+
+.max-w-\[270px\] {
+  max-width: 270px;
+}
+
+.max-w-\[290px\] {
+  max-width: 290px;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.rounded-none {
+  border-radius: 0px;
+}
+
+.rounded-t-lg {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.rounded-b-lg {
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.bg-primary-bright-orange {
+  --tw-bg-opacity: 1;
+  background-color: hsl(31 77% 52% / var(--tw-bg-opacity));
+}
+
+.bg-primary-dark-cyan {
+  --tw-bg-opacity: 1;
+  background-color: hsl(184 100% 22% / var(--tw-bg-opacity));
+}
+
+.bg-primary-very-dark-cyan {
+  --tw-bg-opacity: 1;
+  background-color: hsl(179 100% 13% / var(--tw-bg-opacity));
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .py-2 {
@@ -549,9 +712,32 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
+.text-6xl {
+  font-size: 3.75rem;
+  line-height: 1;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.leading-loose {
+  line-height: 2;
+}
+
+.text-neutral-transparent-white {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.text-neutral-500 {
+  --tw-text-opacity: 1;
+  color: rgb(115 115 115 / var(--tw-text-opacity));
+}
+
+.text-primary-dark-cyan {
+  --tw-text-opacity: 1;
+  color: hsl(184 100% 22% / var(--tw-text-opacity));
 }
 
 .hover\:text-white:hover {
@@ -559,7 +745,136 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-primary-very-dark-cyan:hover {
+  --tw-text-opacity: 1;
+  color: hsl(179 100% 13% / var(--tw-text-opacity));
+}
+
 .focus\:text-white:focus {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.focus\:text-primary-very-dark-cyan:focus {
+  --tw-text-opacity: 1;
+  color: hsl(179 100% 13% / var(--tw-text-opacity));
+}
+
+@media (min-width: 600px) {
+  .medium\:absolute {
+    position: absolute;
+  }
+
+  .medium\:bottom-10 {
+    bottom: 2.5rem;
+  }
+
+  .medium\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
+  .medium\:mb-20 {
+    margin-bottom: 5rem;
+  }
+
+  .medium\:flex {
+    display: flex;
+  }
+
+  .medium\:min-h-\[512px\] {
+    min-height: 512px;
+  }
+
+  .medium\:w-\[350px\] {
+    width: 350px;
+  }
+
+  .medium\:max-w-\[280px\] {
+    max-width: 280px;
+  }
+
+  .medium\:max-w-\[290px\] {
+    max-width: 290px;
+  }
+
+  .medium\:max-w-\[300px\] {
+    max-width: 300px;
+  }
+
+  .medium\:max-w-\[350px\] {
+    max-width: 350px;
+  }
+
+  .medium\:max-w-\[210px\] {
+    max-width: 210px;
+  }
+
+  .medium\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .medium\:rounded-bl-lg {
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .medium\:rounded-tl-lg {
+    border-top-left-radius: 0.5rem;
+  }
+
+  .medium\:rounded-tr-none {
+    border-top-right-radius: 0px;
+  }
+
+  .medium\:rounded-bl-none {
+    border-bottom-left-radius: 0px;
+  }
+
+  .medium\:rounded-br-lg {
+    border-bottom-right-radius: 0.5rem;
+  }
+
+  .medium\:rounded-tr-lg {
+    border-top-right-radius: 0.5rem;
+  }
+
+  .medium\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .medium\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .medium\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
+  .medium\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .medium\:px-\[70px\] {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .medium\:pl-16 {
+    padding-left: 4rem;
+  }
+
+  .medium\:pr-\[70px\] {
+    padding-right: 70px;
+  }
+
+  .medium\:pr-\[75px\] {
+    padding-right: 75px;
+  }
+
+  .medium\:pr-\[80px\] {
+    padding-right: 80px;
+  }
 }
