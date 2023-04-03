@@ -26,18 +26,50 @@
 </head>
 
 <body class="">
-  <main>
-    <section>
+  <main class="">
+    
+    <section class="bg-custom-gradient-1  medium:bg-custom-grad-img medium:bg-no-repeat medium:bg-left-bottom medium:bg-cover min-h-[100vh] medium:grid medium:grid-cols-5">
+      <header class=" p-8 medium:grid medium:col-start-1 medium:col-span-3 medium:row-start-1 medium:row-span-1 medium:px-16 md:px-28">
+        <div class=" w-[385px] desktop:ml-auto">
+        <a href="/" class=" inline-block">
+          <img src="./build/img/logo.svg" alt="Base apparel home" class="">
+          <!-- <span class="sr-only">Goto home</span> -->
+        </a>
+      </div>
+      </header>
+      
+      <picture class="medium:col-start-4 medium:col-span-2 medium:row-start-1 medium:row-span-2">
+        <source media="(max-width: 375px)" srcset="./build/img/hero-mobile.jpg" >
+        <source media="(min-width: 376px)" srcset="./build/img/hero-desktop.jpg" >
+        <img src="./build/img/hero-desktop.jpg" alt="base apparel model" class="h-[100%] object-cover">
+      </picture>
+      
+      <!-- <div class="bg-custom-gradient-1 medium:bg-custom-grad-img "> -->
+        <div class=" text-center pt-16 pb-24 px-8 medium:text-left medium:col-start-1 medium:col-span-3 medium:row-start-2 medium:row-span-1 medium:px-16 md:px-28 desktop:ml-auto">
+          <div class=" max-w-xs medium:max-w-sm mx-auto medium:mx-0">
+            <h1 class="text-primary-red uppercase tracking-[0.2em] mb-8 text-4xl medium:text-6xl font-light">We're <span class="block text-neutral-gray-red font-normal">coming soon</span></h1>
+            <p class="text-primary-red mb-8">Hello fellow shoppers! We're currently building our new fashion store.
+              Add your email below to stay up-to-date with announcements and our launch deals.</p>
 
+            <form novalidate>
+              <div class="relative max-w-xs medium:max-w-sm">
+                <input type="email" name="email" placeholder="Email address" class="border border-primary-red px-6 py-4 text-sm w-[90%] placeholder:text-primary-red rounded-3xl leading-none grow relative" required >
+                <!-- <span class="absolute right-14 top-2 z-10"><img src="./build/img/icon-error.svg" alt="error icon"></span> -->
+                <button type="submit" class=" bg-custom-gradient-2 w-[4.2rem] h-12 rounded-3xl p-6 flex justify-center items-center text-sm absolute right-4 top-0 transition shadow-sm border border-transparent hover:shadow-xl hover:brightness-125 medium:w-20 before:content-none before:w-5 before:h-5 before:absolute before:-left-8 before:top-2.5 before:z-10">
+                  <img src="./build/img/icon-arrow.svg" alt="" aria-hidden="true">
+                  <span class="sr-only">Submit</span>
+                </button>
+                <div class="validation-message opacity mt-1 absolute text-primary-red-soft font-bold text-sm ml-5 transition opacity-0">
+                  
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      
     </section>
   </main>
-  We're coming soon
-
-  Hello fellow shoppers! We're currently building our new fashion store.
-  Add your email below to stay up-to-date with announcements and our launch deals.
-
-  Email Address
-
+  
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="">Frontend Mentor</a>.
     Coded by <a href="https://www.frontendmentor.io/profile/gtalin" class="" >AJ</a>.
