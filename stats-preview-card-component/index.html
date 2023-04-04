@@ -24,25 +24,59 @@
   <!-- <script src="./src/main.js" async></script> -->
 </head>
 
-<body class="">
+<body class="bg-primary-blue-dark text-neutral">
 
-  <main>
+  <main class="min-h-[100vh] flex justify-center items-center max-w-screen-desktop m-auto">
+    <section class="text-center my-12 mx-4 rounded-lg md:grid md:grid-cols-2 md:text-left">
+      <header class="w-full bg-primary-blue overflow-hidden md:col-start-2 md:row-start-1 rounded-t-lg md:rounded-tl-none md:rounded-r-lg">
+        <picture >
+          <source media="(max-width: 650px)" srcset="./build/img/image-header-mobile.jpg">
+          <source media="(min-width: 651px)" srcset="./build/img/image-header-desktop.jpg">
+          <img src="./build/img/image-header-desktop.jpg" alt="" class="opacity-50 w-[100%] h-[100%] object-cover object-top">
+        </picture>
+      </header>
 
+      <!-- <div class="bg-primary-blue bg-header-img-mobile bg-no-repeat bg-top bg-cover h-[50vh] w-full">
+      </div> -->
+
+      <article class="bg-primary-blue-desat px-4 py-10  md:col-start-1 md:row-start-1 md:grid md:justify-left md:content-center  rounded-b-lg md:rounded-b-none md:rounded-l-lg">
+        <div class="max-w-[30ch] m-auto md:max-w-[40ch] ">
+        <h2 class="text-white text-3xl font-bold font-sans2 mb-6 md:text-4xl">Get <span class="text-primary-blue">insights</span> that help your business grow.</h2>
+        <p class="text-neutral mb-10 font-sans font-normal leading-normal">Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.</p>
+        <ul class="space-y-6 md:flex md:space-y-0 md:gap-4 md:justify-between">
+          <li>
+            <p class="text-xl font-bold font-sans2 text-white">
+              10k+
+              <span class="text-neutral-400 text-xs font-sans font-normal block uppercase tracking-widest">companies</span>
+            </p>
+          </li>
+
+          <li>
+            <p class="text-xl font-bold font-sans2 text-white">
+              314
+              <span class="text-neutral-400 text-xs font-sans font-normal block uppercase tracking-widest" >templates</span>
+            </p>
+          </li>
+
+          <li>
+            <p class="text-xl font-bold font-sans2 text-white">
+              12m+ 
+              <span class="text-neutral-400 text-xs font-sans font-normal block uppercase tracking-widest">queries</span>
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      </article>
+      
+      
+    </section>
   </main>
 
-  Get insights that help your business grow.
-
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer
-  experience, and overall efficiency.
-
-  10k+ companies
-  314 templates
-  12m+ queries
-
-
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="">Frontend Mentor</a>.
-    Coded by <a href="https://www.frontendmentor.io/profile/gtalin" class="">AJ</a>.
+  <footer class="text-neutral text-center text-xs">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-primary-blue">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/gtalin" class="text-primary-blue">AJ</a>.
   </footer>
 
 </body>

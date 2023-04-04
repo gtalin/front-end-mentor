@@ -4,8 +4,8 @@ module.exports = {
   content: ['index.html', './src/*.{html,js}'],
   theme: {
     fontFamily: {
-      sans: ['Inter', ...defaultTheme.fontFamily.sans],
-      serif: ['Lexend Deca', ...defaultTheme.fontFamily.serif]
+      sans2: ['Inter', ...defaultTheme.fontFamily.sans],
+      sans: ['Lexend Deca', ...defaultTheme.fontFamily.sans]
     },
     fontWeight: {
       normal: '400',
@@ -30,20 +30,20 @@ module.exports = {
         },
         neutral: {
           DEFAULT: 'hsla(0, 0%, 100%, 0.75)',
-          'transparent-white': 'hsla(0, 0%, 100%, 0.6)'
+          '400': 'hsla(0, 0%, 100%, 0.6)'
         }
       },
 
       screens: {
         mobile: '375px',
-        medium: '600px',
+        medium: '550px',
         desktop: '1440px',
       },
       
       backgroundImage: {
         'bg-pattern': 'url("./img/bg-pattern-desktop.svg")',
-        'hero-img-desktop': 'url("./img/hero-desktop.jpg")',
-        'hero-img-mobile': 'url("./img/hero-mobile.jpg")',
+        'header-img-desktop': 'linear-gradient(0deg, hsla(277, 64%, 61%,0.8), hsla(277, 64%, 61%,0.8)), url("./img/image-header-desktop.jpg") ',
+        'header-img-mobile': 'linear-gradient(0deg, hsla(277, 64%, 61%,0.6), hsla(277, 64%, 61%,0.6)), url("./img/image-header-mobile.jpg")',
         
       },
       boxShadow: {

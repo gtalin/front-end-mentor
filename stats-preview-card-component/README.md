@@ -26,6 +26,7 @@ Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 -
+
 ### Screenshot
 
 The screenshot for desktop view:
@@ -55,6 +56,36 @@ The screenshot for mobile view:
 
 **todo**
 
+### Image with colour overlay
+
+- One method is by using image
+
+```html
+<header class="w-full h-[50vh] bg-primary-blue overflow-hidden">
+  <picture>
+    <source
+      media="(max-width: 375px)"
+      srcset="./build/img/image-header-mobile.jpg"
+    />
+    <source
+      media="(min-width: 376px)"
+      srcset="./build/img/image-header-desktop.jpg"
+    />
+    <img src="./build/img/image-header-desktop.jpg" alt="" class="opacity-50" />
+  </picture>
+</header>
+```
+
+- 2nd method is by using as background image and linear gradient
+
+```html
+<div
+  class="bg-primary-blue bg-header-img-mobile bg-no-repeat bg-top bg-cover h-[50vh] w-full"
+></div>
+```
+
+The `bg-primary-blue` class added is as a backup in case the linear gradient does not work.
+
 ### Continued development
 
 Would like to do more projects using tailwindcss. Would also like to focus more on accessibility.
@@ -62,6 +93,9 @@ Would like to do more projects using tailwindcss. Would also like to focus more 
 ### Useful resources
 
 - [Tailwind docs](https://tailwindcss.com/docs/)
+- [Color overlay for background image](https://stackoverflow.com/questions/36679649/how-to-add-a-color-overlay-to-a-background-image) and [another link](https://stackoverflow.com/questions/18815157/how-to-overlay-image-with-color-in-css)
+- [CSS overlay](https://www.w3schools.com/howto/howto_css_overlay.asp)
+- [Image overlay](https://dev.to/ellen_dev/two-ways-to-achieve-an-image-colour-overlay-with-css-eio)
 
 ## Author
 
