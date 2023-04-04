@@ -38,8 +38,8 @@ The screenshot for desktop view:
 
 ### Links
 
-- Solution URL: [3 column preview card](https://github.com/gtalin/front-end-mentor/base-apparel-coming-soon)
-- Live Site URL: [3 column preview card](https://gtalin.github.io/front-end-mentor/base-apparel-coming-soon)
+- Solution URL: [Base apparel coming soon](https://github.com/gtalin/front-end-mentor/base-apparel-coming-soon)
+- Live Site URL: [Base apparel coming soon](https://gtalin.github.io/front-end-mentor/base-apparel-coming-soon)
 
 ## My process
 
