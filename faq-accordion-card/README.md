@@ -62,6 +62,8 @@ Based my `html` on this [link](https://www.sarasoueidan.com/blog/accordion-marku
 Used a `ul` and `li` combination.
 And inside `li` for questions used `h3` and `button` and for answers used `div` and `p`
 
+We have used a decorative illustration image. So set the alt tag for it as empty. As per this [link](https://www.w3.org/WAI/tutorials/images/decorative/).
+
 ### Continued development
 
 Would like to do more projects using tailwindcss. Would also like to focus more on accessibility.
@@ -72,7 +74,7 @@ Would like to do more projects using tailwindcss. Would also like to focus more 
 - [Semantic accordion markup](https://www.sarasoueidan.com/blog/accordion-markup/)
 - [Accessible Aria Accordions](https://www.scottohara.me/blog/2017/10/25/accordion-release.html)
 - [native html accordion](https://nikitahl.com/native-html-accordion) This implementation uses details and summary to implement an FAQ. There is no way to add animate the transition of the open and closed states (there are some work arounds where we can animate the contents inside the details).
-- [Inclusive collapsible sections](https://inclusive-components.design/collapsible-sections/) - good for markup and aria. 
+- [Inclusive collapsible sections](https://inclusive-components.design/collapsible-sections/) - good for markup and aria.
 - [Change size of image in pseudo element](https://stackoverflow.com/questions/8977957/can-i-change-the-height-of-an-image-in-css-before-after-pseudo-elements)
 
 ## Author
