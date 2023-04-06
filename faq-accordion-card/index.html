@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./build/img/favicon-32x32.png">
+
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <!-- font awesome -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> -->
+
+  <link rel="stylesheet" href="./build/style.css">
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <script src="./src/main.js" async></script>
+</head>
+
+<body class="bg-gradient-to-br from-gradient-start to-gradient-end bg-no-repeat">
+  <!-- <main class="min-h-[100vh] flex justify-center items-center text-neutral-gray-blue"> -->
+    <main class="min-h-[100vh]  text-neutral-gray-blue md:mx-12 ">
+    <section class="bg-white pt-44 relative max-w-[40ch] mt-28 mb-11 shadow-shadow-2 rounded-3xl mx-auto md:max-w-screen-xl md:grid md:grid-cols-2 md:gap-8 md:pt-0 md:pb-0 xl:mx-auto ">
+      <div class=" w-full h-32 bg-pattern-mobile bg-[length:246px_106px] bg-top bg-no-repeat absolute -top-0 flex justify-center items-start md:bg-pattern-dekstop md:relative md:w-full md:bg-200% md:bg-right  md:h-[700px] md:before:content-[''] 
+      md:before:bg-cube-img
+      md:before:absolute md:before:w-48 md:before:h-48 md:before:-left-24 md:before:top-[40%] md:before:z-30 md:before:bg-cover">
+        <div class=" w-full h-full relative md:overflow-hidden">
+        <picture class="absolute top-0 left-[10%] transition -translate-y-[55%] -translate-x-[5%] md:-left-10 md:top-[50%] z-0">
+          <source media="(max-width: 768px)" srcset="./build/img/illustration-woman-online-mobile.svg" >
+          <source media="(min-width: 769px)" srcset="./build/img/illustration-woman-online-desktop.svg" >
+          <img src="./build/img/illustration-woman-online-desktop.svg" alt="" class="w-full">
+        </picture>
+      </div>
+      </div>
+      
+      <!-- <article class="md:py-16 md:px-4 lg:px-8 xl:px-16 md:max-w-[75ch]"> -->
+        <article class="md:py-16 md:px-4 lg:px-8 xl:px-16 md:max-w-[60ch] ">
+        <h2 class="text-6xl text-primary-blue text-center font-bold md:text-left md:mb-12">FAQ</h2>
+      <ul class="py-8 space-y-4 px-4 md:px-0">
+        <li class="space-y-4">
+          <h3 class="">
+          <button class=" w-full flex justify-between items-center transition hover:text-primary-red" aria-expanded="false">
+            <span class="">
+              How many team members can I invite?
+            </span>
+            <svg aria-hidden="true" focusable="false" class="transition" width="10" height="7" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+          </button>
+        </h3>
+          <p class="">
+            You can invite up to 2 additional users on the Free plan. There is no limit on
+  team members for the Premium plan.
+          </p>
+          <hr class="bg-neutral-gray-blue-300"/>
+        </li>
+
+        <li class="space-y-4">
+          <h3 class="">
+          <button class=" w-full flex justify-between items-center transition hover:text-primary-red" aria-expanded="false">
+            <span class="">
+              What is the maximum file upload size?
+            </span>
+            <svg aria-hidden="true" focusable="false" class="transition" width="10" height="7" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+          </button>
+        </h3>
+          <p>
+            No more than 2GB. All files in your account must fit your allotted storage space.
+          </p>
+
+        <hr class="bg-neutral-gray-blue-300"/>
+        </li>
+
+        
+        <li class="space-y-4">
+          <h3 class="">
+          <button class=" w-full flex justify-between items-center transition hover:text-primary-red" aria-expanded="false">
+            <span class="">
+              How do I reset my password?
+            </span>
+            <svg aria-hidden="true" focusable="false" class="transition" width="10" height="7" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+          </button>
+        </h3>
+          <p>
+            
+  Click “Forgot password” from the login page or “Change password” from your profile page.
+  A reset link will be emailed to you.
+          </p>
+        <hr class="bg-neutral-gray-blue-300"/>
+        </li>
+
+        <li class="space-y-4">
+          <h3 class="">
+          <button class=" w-full flex justify-between items-center transition hover:text-primary-red" aria-expanded="false">
+            <span class="">
+              Can I cancel my subscription?
+            </span>
+            <svg aria-hidden="true" focusable="false" class="transition" width="10" height="7" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+          </button>
+        </h3>
+          <p>
+            
+  Yes! Send us a message and we’ll process your request no questions asked.
+          </p>
+        <hr class="bg-neutral-gray-blue-300"/>
+        </li>
+
+        <li class="space-y-4">
+          <h3 class="">
+          <button class=" w-full flex justify-between items-center transition hover:text-primary-red" aria-expanded="false">
+            <span class="">
+              Do you provide additional support?
+            </span>
+            <svg aria-hidden="true" focusable="false" class="transition" width="10" height="7" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+          </button>
+        </h3>
+          <p>
+            
+  Chat and email support is available 24/7. Phone lines are open during normal business hours.
+
+          </p>
+        <hr class="bg-neutral-gray-blue-300"/>
+        </li>
+
+      </ul>
+      </article>
+    </section>
+
+  </main>
+
+  
+
+  
+
+  
+
+  <footer class="text-sm text-white text-center mb-4">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-primary-red">Frontend Mentor</a>.
+    Coded by <a href="https://www.frontendmentor.io/profile/gtalin" class="text-primary-red" >AJ</a>.
+  </footer>
+
+</body>
+</html>
