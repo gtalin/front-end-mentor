@@ -3,7 +3,7 @@
 
   Array.prototype.forEach.call(headings, heading => {
     let btn = heading.querySelector('button');
-    
+    btn.setAttribute('aria-expanded', 'false'); //By default have made `aria-expanded` as "true"
     // Hiding using JS so that if JS is disabled the user can see all faqs
     let target = heading.nextElementSibling
     target.setAttribute('hidden', true);

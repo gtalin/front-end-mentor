@@ -818,6 +818,10 @@ html {
     height: auto;
   }
 
+  .md\:min-h-\[700px\] {
+    min-height: 700px;
+  }
+
   .md\:w-full {
     width: 100%;
   }
